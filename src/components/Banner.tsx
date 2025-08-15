@@ -1,32 +1,23 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
+const toRotate = ["Fullstack Developer", "Software Engineer"];
+
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Front-End Developer", "Data Analyst", "Software Enginner"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 1000;
 
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
+  const tick = useCallback(() => {
+    const i = loopNum % toRotate.length;
+    const fullText = toRotate[i];
+    const updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1);
 
@@ -44,7 +35,17 @@ export const Banner = () => {
       setLoopNum(loopNum + 1);
       setDelta(500);
     }
-  };
+  }, [loopNum, isDeleting, text.length, period]);
+
+  useEffect(() => {
+    const ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => {
+      clearInterval(ticker);
+    };
+  }, [delta, tick]);
 
   return (
     <section className="banner" id="home">
@@ -74,16 +75,11 @@ export const Banner = () => {
                     providing creative and effective solutions
                   </p>
                   <a
-                    href="https://drive.google.com/file/d/16ir9w0sSDbfNtH6TAtgT3VGSOHAZ3AQh/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1DX80VF4ZiBZbzmFj0YNFPsVpFn3smd6e/view?usp=drive_link"
                     className="text-decoration-none"
                   >
                     <button>
-                      Get my Data Analyst Cv <ArrowRightCircle size={25} />
-                    </button>
-                  </a>
-                  <a href="https://drive.google.com/file/d/1DX80VF4ZiBZbzmFj0YNFPsVpFn3smd6e/view?usp=drive_link" className="text-decoration-none">
-                    <button>
-                      Get my Web developer Cv <ArrowRightCircle size={25} />
+                      Get my Cv <ArrowRightCircle size={25} />
                     </button>
                   </a>
                 </div>

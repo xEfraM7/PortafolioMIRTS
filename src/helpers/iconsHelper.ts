@@ -59,10 +59,6 @@ export const icons = [
       title: "Yarn",
     },
     {
-      icon: npm,
-      title: "Npm",
-    },
-    {
       icon: python,
       title: "Python",
     },

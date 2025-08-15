@@ -460,8 +460,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .proj-imgbx::before {
   content: "";
@@ -510,6 +513,45 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+/* Mobile responsive styles for projects */
+@media (max-width: 767px) {
+  .proj-imgbx {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .project p {
+    width: 90%;
+    font-size: 16px;
+  }
+  
+  .project .nav.nav-pills {
+    width: 90%;
+  }
+  
+  .proj-txtx h4 {
+    font-size: 24px;
+  }
+  
+  .proj-txtx span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .proj-imgbx {
+    height: 200px;
+  }
+  
+  .project h2 {
+    font-size: 35px;
+  }
+  
+  .proj-txtx h4 {
+    font-size: 20px;
+  }
 }
 
 /************ Projects Css ************/

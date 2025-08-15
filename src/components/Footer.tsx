@@ -28,7 +28,7 @@ export const Footer = () => {
                 <img src={navIcon5} alt="" />
               </a>
             </div>
-            <p>Copyright 2022. All Rights Reserved WebCoded-Efrain Cabrera</p>
+            <p>Copyright 2025. All Rights Reserved WebCoded-Efrain Cabrera</p>
           </Col>
         </Row>
       </Container>

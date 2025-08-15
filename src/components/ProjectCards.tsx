@@ -9,7 +9,7 @@ interface Props {
 
 export const ProjectCards = ({ title, description, imgUrl, href }: Props) => {
   return (
-    <Col sm={6} md={4}>
+    <Col xs={12} sm={6} md={4}>
       <div className="proj-imgbx">
         <img src={imgUrl} alt="proj-img" />
         <a

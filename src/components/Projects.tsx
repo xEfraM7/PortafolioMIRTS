@@ -5,7 +5,6 @@ import "animate.css";
 import TrackVisibility from "react-on-screen";
 import { projects } from "../helpers/projectsHelper";
 
-
 export const Projects = () => {
   return (
     <section className="project" id="project">
