@@ -75,7 +75,7 @@ export const Banner = () => {
                     providing creative and effective solutions
                   </p>
                   <a
-                    href="https://drive.google.com/file/d/1DX80VF4ZiBZbzmFj0YNFPsVpFn3smd6e/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1sGAXoRGEefajNz_hERwppXJIHJlzSXer/view?usp=sharing"
                     className="text-decoration-none"
                   >
                     <button>
