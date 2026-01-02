@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/ui/header-img.svg";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -63,24 +63,32 @@ export const Banner = () => {
                     <span className="wrap">{text}</span>
                   </h1>
                   <p>
-                    Software Engineer and Front-End Developer with experience in
-                    data analysis (SQL, Excel, Python) and web interface
-                    development using React, Next.js, and TypeScript. I have
-                    worked with databases such as PostgreSQL and MySQL,
-                    optimizing queries and designing backend solutions. I
-                    possess expertise in responsive design using CSS3 and
-                    Tailwind CSS, implementing efficient data manipulation
-                    processes that enhance decision-making. I am known for my
-                    critical thinking and ability to work collaboratively,
-                    providing creative and effective solutions
+                    Full-Stack Developer with over 3 years of experience creating
+                    responsive and scalable applications using React, Next.js,
+                    Laravel, and React Native. I specialize in user-centric
+                    platforms and mobile solutions applied in sectors such as
+                    hospitality, real estate, and healthcare.
+                    <br />
+                    <br />
+                    Passionate about performance optimization (lazy loading, code
+                    splitting), clean UI/UX design, and cross-functional
+                    collaboration. I have led frontend architectures, integrated
+                    APIs, and launched mobile products with active users on
+                    Google Play.
+                    <br />
+                    <br />
+                    Currently, I am looking for opportunities where I can
+                    contribute to the development of innovative products and
+                    continue growing in technology-driven environments focused
+                    on user experience.
                   </p>
                   <a
                     href="https://drive.google.com/file/d/1sGAXoRGEefajNz_hERwppXJIHJlzSXer/view?usp=sharing"
                     className="text-decoration-none"
                   >
-                    <button>
+                    {/* <button>
                       Get my Cv <ArrowRightCircle size={25} />
-                    </button>
+                    </button> */}
                   </a>
                 </div>
               )}

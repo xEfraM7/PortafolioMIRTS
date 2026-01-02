@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 
-import logo from "../assets/img/logo.svg";
-import navIcon1 from "../assets/img/nav-icon1.svg";
-import navIcon3 from "../assets/img/nav-icon3.svg";
-import navIcon4 from "../assets/img/nav-icon4.svg";
-import navIcon5 from "../assets/img/nav-icon5.svg";
+import logo from "../assets/img/ui/logo.svg";
+import navIcon1 from "../assets/img/social/nav-icon1.svg";
+import navIcon3 from "../assets/img/social/nav-icon3.svg";
+import navIcon4 from "../assets/img/social/nav-icon4.svg";
+import navIcon5 from "../assets/img/social/nav-icon5.svg";
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -27,7 +27,7 @@ export const NavBar = () => {
     };
   }, []);
 
-  const onUpdateActiveLink = (value:string) => {
+  const onUpdateActiveLink = (value: string) => {
     setActiveLink(value);
   };
 
