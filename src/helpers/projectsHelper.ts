@@ -1,4 +1,4 @@
-import comingSoon from "../assets/img/projects/coming-soon.jpg";
+
 import journalImg from "../assets/img/projects/journal-app.png";
 import hisCapture from "../assets/img/projects/hisCapture.jpg";
 import damasco from "../assets/img/projects/damasco.jpg";
