@@ -6,14 +6,18 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Footer } from "./components/Footer";
 
+import { ReactLenis } from 'lenis/react';
+
 export const App = () => {
   return (
-    <div className="App">
-      <NavBar />
-      <Banner />
-      <Skills />
-      <Projects />
-      <Footer />
-    </div>
+    <ReactLenis root options={{ anchors: true }}>
+      <div className="App">
+        <NavBar />
+        <Banner />
+        <Skills />
+        <Projects />
+        <Footer />
+      </div>
+    </ReactLenis>
   );
 };

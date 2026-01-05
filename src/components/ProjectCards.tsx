@@ -17,7 +17,7 @@ export const ProjectCards = ({ title, description, imgUrl, href }: Props) => {
           rel="noopener noreferrer"
           className="text-decoration-none"
         >
-          <img src={imgUrl} alt="proj-img" />
+          <img src={imgUrl} alt={title} />
           <div className="proj-txtx">
             <h4>{title}</h4>
             <span>{description}</span>

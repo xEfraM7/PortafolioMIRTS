@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
+import { useLenis } from 'lenis/react';
 
 import logo from "../assets/img/ui/logo.svg";
 import navIcon1 from "../assets/img/social/nav-icon1.svg";
@@ -10,6 +11,7 @@ import navIcon5 from "../assets/img/social/nav-icon5.svg";
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const lenis = useLenis();
 
   useEffect(() => {
     const onScroll = () => {
@@ -27,8 +29,11 @@ export const NavBar = () => {
     };
   }, []);
 
-  const onUpdateActiveLink = (value: string) => {
+  const onUpdateActiveLink = (value: string, anchor?: string) => {
     setActiveLink(value);
+    if (anchor && lenis) {
+      lenis.scrollTo(anchor, { offset: -400 });
+    }
   };
 
   return (
@@ -49,7 +54,7 @@ export const NavBar = () => {
               className={
                 activeLink === "home" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("home")}
+              onClick={() => onUpdateActiveLink("home", "#home")}
             >
               Home
             </Nav.Link>
@@ -58,7 +63,10 @@ export const NavBar = () => {
               className={
                 activeLink === "skills" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("skills")}
+              onClick={(e) => {
+                e.preventDefault();
+                onUpdateActiveLink("skills", "#skills");
+              }}
             >
               Skills
             </Nav.Link>
@@ -67,7 +75,10 @@ export const NavBar = () => {
               className={
                 activeLink === "projects" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateActiveLink("projects")}
+              onClick={(e) => {
+                e.preventDefault();
+                onUpdateActiveLink("projects", "#project");
+              }}
             >
               Projects
             </Nav.Link>
