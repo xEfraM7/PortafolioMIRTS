@@ -63,6 +63,16 @@
       }
     }
   },
+  "contact": {
+    "index": "07",
+    "label": "Contacto",
+    "kicker": "Conversemos",
+    "title": "Si tu equipo está construyendo algo real, me interesa escucharlo.",
+    "subtitle": "Respondo en menos de un día hábil.",
+    "ctaEmail": "Escríbeme",
+    "ctaSchedule": "Agenda una llamada",
+    "ctaLinkedIn": "Escríbeme en LinkedIn"
+  },
   "projects": {
     "supraca": {
       "role": "Frontend lead",

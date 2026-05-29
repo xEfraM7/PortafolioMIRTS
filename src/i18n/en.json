@@ -63,6 +63,16 @@
       }
     }
   },
+  "contact": {
+    "index": "07",
+    "label": "Contact",
+    "kicker": "Let's talk",
+    "title": "If your team is shipping something real, I'd like to hear about it.",
+    "subtitle": "I respond within a business day.",
+    "ctaEmail": "Email me",
+    "ctaSchedule": "Schedule a call",
+    "ctaLinkedIn": "Message on LinkedIn"
+  },
   "projects": {
     "supraca": {
       "role": "Frontend lead",

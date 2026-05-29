@@ -9,6 +9,7 @@ import { SelectedWork } from "./components/sections/SelectedWork";
 import { MoreWork } from "./components/sections/MoreWork";
 import { Archive } from "./components/sections/Archive";
 import { Experience } from "./components/sections/Experience";
+import { Contact } from "./components/sections/Contact";
 
 export const App = () => {
   const { i18n } = useTranslation();
@@ -27,9 +28,7 @@ export const App = () => {
         <MoreWork />
         <Archive />
         <Experience />
-        <section id="contact" className="container-page py-section-y-sm">
-          <p className="font-mono text-xs uppercase tracking-tighter text-text-tertiary">07 — contact</p>
-        </section>
+        <Contact />
       </main>
       <Footer />
     </ReactLenis>
