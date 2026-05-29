@@ -55,7 +55,7 @@ export const NavBar = () => {
       )}
     >
       <div className="container-hero flex h-16 items-center justify-between">
-        <a href="#hero" aria-label="Home" className="flex items-center gap-2 text-text-primary">
+        <a href="#hero" className="flex items-center gap-2 text-text-primary">
           <Logo className="h-7 w-7" />
           <span className="font-mono text-sm tracking-tight">efrain.cabrera</span>
         </a>
