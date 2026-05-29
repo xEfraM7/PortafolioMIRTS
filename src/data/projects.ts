@@ -22,6 +22,7 @@ export type Project = {
   stack: string[];
   imgUrl: string;
   liveUrl?: string;
+  caseStudyUrl?: string;
   tier: Tier;
 };
 

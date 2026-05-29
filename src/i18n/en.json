@@ -21,5 +21,42 @@
       "industries": "industries",
       "mobile": "live mobile apps"
     }
+  },
+  "work": {
+    "index": "03",
+    "label": "Selected Work",
+    "meta": "Featured",
+    "labels": {
+      "role": "Role",
+      "stack": "Stack",
+      "outcome": "Outcome",
+      "client": "Client",
+      "year": "Year",
+      "sector": "Sector"
+    },
+    "actions": {
+      "visit": "Visit live",
+      "readCase": "Read case study"
+    }
+  },
+  "projects": {
+    "supraca": {
+      "role": "Frontend lead",
+      "problem": "[TBD: Supraca problem EN — 1 sentence about the client pain]",
+      "solution": "[TBD: Supraca solution EN — 1 sentence about what was built]",
+      "outcome": "[TBD: Supraca outcome EN — 1 sentence with metric if known]"
+    },
+    "damasco": {
+      "role": "Full development",
+      "problem": "[TBD: Damasco problem EN — 1 sentence]",
+      "solution": "[TBD: Damasco solution EN — 1 sentence]",
+      "outcome": "[TBD: Damasco outcome EN — 1 sentence with metric if known]"
+    },
+    "his": {
+      "role": "Module developer",
+      "problem": "[TBD: HIS problem EN — 1 sentence]",
+      "solution": "[TBD: HIS solution EN — 1 sentence]",
+      "outcome": "[TBD: HIS outcome EN — 1 sentence with metric if known]"
+    }
   }
 }

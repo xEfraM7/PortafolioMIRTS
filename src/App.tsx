@@ -5,6 +5,7 @@ import { NavBar } from "./components/layout/NavBar";
 import { Footer } from "./components/layout/Footer";
 import { Hero } from "./components/sections/Hero";
 import { About } from "./components/sections/About";
+import { SelectedWork } from "./components/sections/SelectedWork";
 
 export const App = () => {
   const { i18n } = useTranslation();
@@ -19,9 +20,7 @@ export const App = () => {
       <main className="pt-16">
         <Hero />
         <About />
-        <section id="work" className="container-page py-section-y-sm">
-          <p className="font-mono text-xs uppercase tracking-tighter text-text-tertiary">03 — selected work</p>
-        </section>
+        <SelectedWork />
         <section id="more-work" className="container-page py-section-y-sm">
           <p className="font-mono text-xs uppercase tracking-tighter text-text-tertiary">04 — more work</p>
         </section>
