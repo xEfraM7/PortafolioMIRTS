@@ -118,7 +118,7 @@ export const projects: Project[] = [
     problemKey: "projects.librarian.problem",
     solutionKey: "projects.librarian.solution",
     outcomeKey: "projects.librarian.outcome",
-    stack: ["React", "Auth"],
+    stack: ["React"],
     imgUrl: librarianCollectorCapture,
     tier: 2,
   },

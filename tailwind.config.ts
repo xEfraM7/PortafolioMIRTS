@@ -33,6 +33,8 @@ const config: Config = {
         },
       },
       fontFamily: {
+        // display is a semantic alias for headline copy; family currently matches
+        // sans but reserves the slot for future divergence (e.g. tighter optical-size).
         display: ['"Geist Variable"', "system-ui", "sans-serif"],
         sans: ['"Geist Variable"', "system-ui", "sans-serif"],
         mono: ['"JetBrains Mono"', "ui-monospace", "monospace"],
