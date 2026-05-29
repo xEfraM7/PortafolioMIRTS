@@ -6,6 +6,8 @@ import { Footer } from "./components/layout/Footer";
 import { Hero } from "./components/sections/Hero";
 import { About } from "./components/sections/About";
 import { SelectedWork } from "./components/sections/SelectedWork";
+import { MoreWork } from "./components/sections/MoreWork";
+import { Archive } from "./components/sections/Archive";
 
 export const App = () => {
   const { i18n } = useTranslation();
@@ -21,12 +23,8 @@ export const App = () => {
         <Hero />
         <About />
         <SelectedWork />
-        <section id="more-work" className="container-page py-section-y-sm">
-          <p className="font-mono text-xs uppercase tracking-tighter text-text-tertiary">04 — more work</p>
-        </section>
-        <section id="archive" className="container-page py-section-y-sm">
-          <p className="font-mono text-xs uppercase tracking-tighter text-text-tertiary">05 — archive</p>
-        </section>
+        <MoreWork />
+        <Archive />
         <section id="experience" className="container-page py-section-y-sm">
           <p className="font-mono text-xs uppercase tracking-tighter text-text-tertiary">06 — experience</p>
         </section>

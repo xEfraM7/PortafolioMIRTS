@@ -39,6 +39,8 @@
       "readCase": "Leer case study"
     }
   },
+  "moreWork": { "index": "04", "label": "Más Proyectos" },
+  "archive": { "index": "05", "label": "Archivo", "viewLabel": "Ver" },
   "projects": {
     "supraca": {
       "role": "Frontend lead",
@@ -57,6 +59,43 @@
       "problem": "[TBD: HIS problema ES — 1 frase]",
       "solution": "[TBD: HIS solución ES — 1 frase]",
       "outcome": "[TBD: HIS resultado ES — 1 frase con métrica]"
+    },
+    "projectR": {
+      "role": "Frontend developer",
+      "problem": "[TBD: Project R problema ES]",
+      "solution": "[TBD: Project R solución ES]",
+      "outcome": "[TBD: Project R resultado ES — 1 frase corta]"
+    },
+    "madbox": {
+      "role": "Dashboard developer",
+      "problem": "[TBD: Madbox problema ES]",
+      "solution": "[TBD: Madbox solución ES]",
+      "outcome": "[TBD: Madbox resultado ES — 1 frase corta]"
+    },
+    "contractor": {
+      "role": "Dashboard developer",
+      "problem": "[TBD: Contractor problema ES]",
+      "solution": "[TBD: Contractor solución ES]",
+      "outcome": "[TBD: Contractor resultado ES — 1 frase corta]"
+    },
+    "librarian": {
+      "role": "Auth + UI developer",
+      "problem": "[TBD: Librarian problema ES]",
+      "solution": "[TBD: Librarian solución ES]",
+      "outcome": "[TBD: Librarian resultado ES — 1 frase corta]"
+    },
+    "billGenerator": {
+      "role": "Solo developer",
+      "problem": "[TBD: Bill Generator problema ES]",
+      "solution": "[TBD: Bill Generator solución ES]",
+      "outcome": "[TBD: Bill Generator resultado ES — 1 frase corta]"
+    },
+    "journal": {
+      "role": "Solo developer",
+      "problem": "[TBD: Journal problema ES]",
+      "solution": "[TBD: Journal solución ES]",
+      "outcome": "[TBD: Journal resultado ES — 1 frase corta]"
     }
   }
 }
+
