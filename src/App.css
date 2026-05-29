@@ -4,18 +4,21 @@
   font-family: Centra;
   src: url("./assets/font/CentraNo2-Bold.ttf");
   font-weight: 700;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Centra;
   src: url("./assets/font/CentraNo2-Book.ttf");
   font-weight: 500;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Centra;
   src: url("./assets/font/CentraNo2-Medium.ttf");
   font-weight: 400;
+  font-display: swap;
 }
 
 /* Default css */
@@ -622,7 +625,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 1;
 }
 
-.proj-txtx h4 {
+.proj-txtx h3 {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -662,7 +665,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 90%;
   }
 
-  .proj-txtx h4 {
+  .proj-txtx h3 {
     font-size: 24px;
   }
 
@@ -680,7 +683,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 35px;
   }
 
-  .proj-txtx h4 {
+  .proj-txtx h3 {
     font-size: 20px;
   }
 }

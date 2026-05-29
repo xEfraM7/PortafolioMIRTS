@@ -63,7 +63,7 @@ export const projects = [
     title: "Journal App",
     description: "Firebase authentication and React-Redux",
     imgUrl: journalImg,
-    href: " https://journal-k9ogsanjj-xefram7.vercel.app",
+    href: "https://journal-k9ogsanjj-xefram7.vercel.app",
   },
 ];
 

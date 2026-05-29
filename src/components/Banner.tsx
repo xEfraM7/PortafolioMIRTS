@@ -60,7 +60,12 @@ export const Banner = () => {
               <span className="tagline">Welcome to my Portfolio</span>
               <h1>
                 {`Hi, i'm Efra and I'm `}
-                <span className="wrap">{text}</span>
+                <span
+                  className="wrap"
+                  style={{ display: "inline-block", minWidth: "20ch" }}
+                >
+                  {text}
+                </span>
               </h1>
               <p>
                 Full-Stack Developer with over 3 years of experience creating
@@ -85,7 +90,12 @@ export const Banner = () => {
             </animated.div>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={headerImg} alt="header img" />
+            <img
+              src={headerImg}
+              alt="Developer illustration"
+              width={682}
+              height={614}
+            />
           </Col>
         </Row>
       </Container>

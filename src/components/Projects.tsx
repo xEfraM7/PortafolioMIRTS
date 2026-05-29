@@ -1,4 +1,4 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCards } from "./ProjectCards";
 import colorSharp2 from "../assets/img/ui/color-sharp2.png";
 import { useInView, animated } from '@react-spring/web';
@@ -24,33 +24,24 @@ export const Projects = () => {
               <h2>Projects</h2>
               <p>Here is a summary of my projects</p>
             </animated.div>
-            <Tab.Container id="projects-tabs" defaultActiveKey="first">
-              <Nav
-                variant="pills"
-                className="nav-pills mb-5 justify-content-center align-items-center"
-                id="pills"
-              >
-                <Nav.Item>
-                  <Nav.Link
-                  >
-                    Own Projects
-                  </Nav.Link>
-                </Nav.Item>
-              </Nav>
-              <Tab.Content>
-                <Tab.Pane eventKey="first">
-                  <Row>
-                    {projects.map((project, index) => {
-                      return <ProjectCards key={index} {...project} />;
-                    })}
-                  </Row>
-                </Tab.Pane>
-              </Tab.Content>
-            </Tab.Container>
+            <Row>
+              {projects.map((project) => (
+                <ProjectCards key={project.title} {...project} />
+              ))}
+            </Row>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2} />
+      <img
+        className="background-image-right"
+        src={colorSharp2}
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+        width={667}
+        height={1064}
+      />
     </section>
   );
 };
