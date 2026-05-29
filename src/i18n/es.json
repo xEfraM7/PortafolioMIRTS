@@ -1,1 +1,12 @@
-{}
+{
+  "nav": {
+    "work": "Proyectos",
+    "about": "Sobre mí",
+    "contact": "Contacto",
+    "cta": "Conversemos"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "built": "Diseñado y desarrollado por Efrain Cabrera."
+  }
+}
