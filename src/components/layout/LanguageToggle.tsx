@@ -7,7 +7,6 @@ export const LanguageToggle = () => {
 
   const setLang = (l: "en" | "es") => {
     void i18n.changeLanguage(l);
-    document.documentElement.lang = l;
   };
 
   return (

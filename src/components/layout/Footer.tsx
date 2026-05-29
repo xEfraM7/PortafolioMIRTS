@@ -9,15 +9,16 @@ const socials = [
   { href: "https://www.instagram.com/efrain_lol/", label: "Instagram", Icon: InstagramIcon },
 ];
 
+const CURRENT_YEAR = new Date().getFullYear();
+
 export const Footer = () => {
   const { t } = useTranslation();
-  const year = new Date().getFullYear();
   return (
     <footer className="border-t border-border/60">
       <div className="container-page flex flex-col gap-6 py-10 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center gap-3 text-text-secondary">
           <Logo className="h-6 w-6" />
-          <span className="font-mono text-xs">© {year} · {t("footer.rights")}</span>
+          <span className="font-mono text-xs">© {CURRENT_YEAR} · {t("footer.rights")}</span>
         </div>
         <div className="flex items-center gap-3">
           {socials.map(({ href, label, Icon }) => (

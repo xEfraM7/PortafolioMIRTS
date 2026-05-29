@@ -36,23 +36,27 @@ const variantClasses: Record<Variant, string> = {
   ghost: "text-text-secondary hover:text-text-primary",
 };
 
+const MAGNETIC_CLAMP = 8;
+const MAGNETIC_STRENGTH = 0.25;
+const SPRING_CONFIG = { stiffness: 200, damping: 18 } as const;
+
+const clamp = (v: number) => Math.max(-MAGNETIC_CLAMP, Math.min(MAGNETIC_CLAMP, v));
+
 export const MagneticButton = (props: Props) => {
   const ref = useRef<HTMLElement>(null);
   const reduce = useReducedMotion();
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-  const sx = useSpring(x, { stiffness: 200, damping: 18 });
-  const sy = useSpring(y, { stiffness: 200, damping: 18 });
+  const sx = useSpring(x, SPRING_CONFIG);
+  const sy = useSpring(y, SPRING_CONFIG);
 
   const onMove = (e: React.MouseEvent) => {
     if (reduce || !ref.current) return;
     const rect = ref.current.getBoundingClientRect();
     const cx = rect.left + rect.width / 2;
     const cy = rect.top + rect.height / 2;
-    const dx = (e.clientX - cx) * 0.25;
-    const dy = (e.clientY - cy) * 0.25;
-    x.set(Math.max(-8, Math.min(8, dx)));
-    y.set(Math.max(-8, Math.min(8, dy)));
+    x.set(clamp((e.clientX - cx) * MAGNETIC_STRENGTH));
+    y.set(clamp((e.clientY - cy) * MAGNETIC_STRENGTH));
   };
 
   const onLeave = () => {

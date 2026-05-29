@@ -42,13 +42,13 @@ export const NavBar = () => {
         </a>
 
         <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
-          {links.map((l) => (
+          {links.map((link) => (
             <a
-              key={l.id}
-              href={l.href}
+              key={link.id}
+              href={link.href}
               className="rounded-pill px-3 py-1.5 text-sm text-text-secondary transition-colors hover:text-text-primary"
             >
-              {t(l.labelKey)}
+              {t(link.labelKey)}
             </a>
           ))}
         </nav>
