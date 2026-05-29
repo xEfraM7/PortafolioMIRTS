@@ -1,6 +1,6 @@
 # Project: PortafolioMIRTS
 
-Portafolio personal construido con **React 18 + TypeScript + Vite**, estilizado con **Bootstrap 5 / React-Bootstrap**, con animaciones (`@react-spring/web`, `lenis`) y carrusel (`embla-carousel-react`).
+Portafolio personal construido con **React 18 + TypeScript + Vite**, estilizado con **Tailwind CSS 3**, con animaciones (`framer-motion`, `lenis`) e internacionalización (`react-i18next`).
 
 > Este archivo sigue la convención `AGENTS.md` / `CLAUDE.md` del curso [`ai-engineering-from-scratch`](https://github.com/rohitg00/ai-engineering-from-scratch): actúa como **router** de contexto, convenciones y reglas para agentes (Claude Code, Codex, Cursor) al iniciar sesión sobre este repo.
 
@@ -8,7 +8,7 @@ Portafolio personal construido con **React 18 + TypeScript + Vite**, estilizado 
 
 ## ROUTER
 
-- **stack**: React 18 · TypeScript 5.5 · Vite 5 · Bootstrap 5 · React-Bootstrap 2
+- **stack**: React 18 · TypeScript 5.5 · Vite 5 · Tailwind CSS 3 · Framer Motion · react-i18next · lenis · @react-spring/web
 - **entry**: [src/main.tsx](src/main.tsx) → [src/App.tsx](src/App.tsx)
 - **build**: `npm run build` (tsc -b && vite build)
 - **dev**: `npm run dev` (http://localhost:5173)
@@ -31,28 +31,55 @@ PortafolioMIRTS/
 ├── tsconfig.node.json          # config TS para herramientas de build
 ├── eslint.config.js            # ESLint flat config (ts + react-hooks + refresh)
 ├── public/
-│   └── vite.svg
+│   ├── vite.svg
+│   ├── robots.txt
+│   └── sitemap.xml
 └── src/
-    ├── main.tsx                # ReactDOM.createRoot
-    ├── App.tsx                 # composición de secciones con ReactLenis
-    ├── App.css                 # estilos globales de la app
-    ├── index.css               # estilos base / reset
-    ├── vite-env.d.ts           # tipos de Vite
+    ├── main.tsx
+    ├── App.tsx                  # 5 secciones reales (NavBar→Hero→About→SelectedWork→MoreWork→Contact→Footer)
+    ├── index.css                # Tailwind directives + design tokens (aurora palette)
+    ├── vite-env.d.ts
     ├── assets/
-    │   ├── font/               # tipografías
-    │   ├── icons/              # íconos estáticos
-    │   └── img/                # imágenes (incluye img/projects/*)
+    │   ├── icons/               # íconos estáticos
+    │   └── img/
+    │       └── projects/        # screenshots de proyectos
     ├── components/
-    │   ├── NavBar.tsx          # navegación responsive con scroll-active
-    │   ├── Banner.tsx          # hero con efecto typing
-    │   ├── Skills.tsx          # carrusel de skills (embla)
-    │   ├── Projects.tsx        # grid de proyectos con tabs
-    │   ├── ProjectCards.tsx    # card individual de proyecto
-    │   └── Footer.tsx          # footer con redes sociales
-    └── helpers/
-        ├── iconsHelper.ts      # mapeo de íconos
-        ├── projectsHelper.ts   # data fuente de proyectos (title, img, href)
-        └── responsiveHelper.ts # breakpoints para carrusel
+    │   ├── layout/
+    │   │   ├── NavBar.tsx       # sticky + lang toggle + magnetic CTA
+    │   │   ├── Footer.tsx
+    │   │   ├── LanguageToggle.tsx
+    │   │   ├── MobileNavToggle.tsx
+    │   │   └── MobileNavPanel.tsx
+    │   ├── sections/
+    │   │   ├── Hero.tsx         # título rotativo con AnimatePresence (3 títulos)
+    │   │   ├── About.tsx
+    │   │   ├── SelectedWork.tsx
+    │   │   ├── MoreWork.tsx
+    │   │   └── Contact.tsx
+    │   ├── work/
+    │   │   ├── FeaturedProjectCard.tsx  # Tier 1
+    │   │   └── ProjectCard.tsx          # Tier 2
+    │   ├── primitives/
+    │   │   ├── AuroraOrb.tsx
+    │   │   ├── MagneticButton.tsx
+    │   │   ├── StatusPill.tsx
+    │   │   ├── SectionHeader.tsx
+    │   │   ├── GlassCard.tsx
+    │   │   └── RevealOnScroll.tsx
+    │   └── icons/
+    │       ├── Logo.tsx
+    │       ├── SocialIcons.tsx
+    │       ├── ArrowUpRight.tsx
+    │       └── ArrowRight.tsx
+    ├── i18n/
+    │   ├── config.ts            # react-i18next + browser-language-detector
+    │   ├── en.json
+    │   └── es.json
+    ├── data/
+    │   └── projects.ts          # 9 proyectos tipados con tier 1 (3) / tier 2 (6)
+    └── lib/
+        ├── cn.ts                # clsx + tailwind-merge
+        └── motion.ts            # Framer Motion variants compartidos
 ```
 
 ---
@@ -64,11 +91,14 @@ Tomadas del patrón `AGENTS.md` del curso (sección *Conventions*) y adaptadas a
 - **TypeScript en modo `strict`** (`tsconfig.app.json`): `noUnusedLocals`, `noUnusedParameters`, `noFallthroughCasesInSwitch` activos. No introducir `any` salvo justificación.
 - **JSX runtime**: `react-jsx` (no es necesario `import React from "react"`).
 - **Componentes**: funcionales con `export const Nombre = () => { ... }`. Un componente por archivo en `src/components/`.
-- **Datos estáticos** (proyectos, skills, breakpoints, íconos): viven en `src/helpers/`, no inline en componentes.
+- **Datos estáticos** (proyectos): viven en `src/data/`, no inline en componentes. Utilidades compartidas en `src/lib/`.
 - **Assets**: imágenes en `src/assets/img/` importadas como ES modules (Vite las hashea). Nunca rutas string a `/src/...`.
-- **Estilos**: Bootstrap global cargado en [src/App.tsx](src/App.tsx) (`bootstrap/dist/css/bootstrap.min.css`). Estilos custom en `App.css` / `index.css`. Preferir clases de Bootstrap antes que CSS nuevo.
+- **Estilos**: Tailwind CSS utilities con design tokens en `src/index.css` (CSS custom properties, paleta aurora). Componentes propios en `src/components/`. **No** introducir librerías de UI nuevas (Bootstrap, MUI, Chakra) sin aprobación.
+- **Motion**: Framer Motion para animaciones reactivas (`fadeUp`, `stagger`, `sectionViewport` en `src/lib/motion.ts`). `prefers-reduced-motion` se respeta en primitives con motion (AuroraOrb, StatusPill, MagneticButton).
+- **i18n**: Copy en `src/i18n/{en,es}.json`, accedido vía `useTranslation()` de react-i18next. `<html lang>` lo gestiona el efecto en `App.tsx` reaccionando a `i18n.resolvedLanguage`.
+- **Datos**: Proyectos en `src/data/projects.ts` con `tier: 1 | 2` y `roleKey/problemKey/solutionKey/outcomeKey` como claves i18n.
 - **Scroll suave**: toda la app está envuelta en `<ReactLenis root>`; no añadir librerías de scroll alternativas.
-- **Lint**: ESLint flat config con `typescript-eslint` + `react-hooks` + `react-refresh`. `react-refresh/only-export-components` está en `warn`: si un archivo exporta más que el componente, considerar mover esos exports a `helpers/`.
+- **Lint**: ESLint flat config con `typescript-eslint` + `react-hooks` + `react-refresh`. `react-refresh/only-export-components` está en `warn`: si un archivo exporta más que el componente, considerar mover esos exports a `src/data/` o `src/lib/`.
 
 ---
 
@@ -94,11 +124,11 @@ Aplicado al stack React/TS:
 - **O — Open/Closed**: extender vía props, `children`, o composición; no editar componentes existentes para casos especiales (`if (variantX)` proliferando).
 - **L — Liskov Substitution**: si un componente acepta `ReactNode`, cualquier nodo válido debe funcionar. No asumir tipos concretos dentro.
 - **I — Interface Segregation**: tipar props con lo mínimo necesario. Evitar `props: any` o interfaces gigantes compartidas; partir en tipos pequeños por componente.
-- **D — Dependency Inversion**: los componentes dependen de **datos** (props), no de fuentes concretas. La data viene de `helpers/` o props, no de imports globales dentro del JSX.
+- **D — Dependency Inversion**: los componentes dependen de **datos** (props), no de fuentes concretas. La data viene de `src/data/` o props, no de imports globales dentro del JSX.
 
 ### DRY — *Don't Repeat Yourself*
 Una pieza de conocimiento vive en **un** lugar.
-- Data de proyectos → [src/helpers/projectsHelper.ts](src/helpers/projectsHelper.ts). Breakpoints → [src/helpers/responsiveHelper.ts](src/helpers/responsiveHelper.ts). Íconos → [src/helpers/iconsHelper.ts](src/helpers/iconsHelper.ts).
+- Data de proyectos → [src/data/projects.ts](src/data/projects.ts). Copy bilingüe → [src/i18n/en.json](src/i18n/en.json) y [src/i18n/es.json](src/i18n/es.json). Variants de motion → [src/lib/motion.ts](src/lib/motion.ts).
 - Si copias un bloque JSX dos veces, en la tercera **extráelo** a componente.
 - **Cuidado con DRY prematuro**: dos bloques que se parecen pero evolucionan distinto NO son duplicación. YAGNI gana sobre DRY si la abstracción aún no es obvia.
 
@@ -114,7 +144,7 @@ Una pieza de conocimiento vive en **un** lugar.
 | `npm run build`    | Type-check (`tsc -b`) + bundle de producción (`vite build`).  |
 | `npm run preview`  | Sirve el bundle de `dist/` para validar build de producción.  |
 
-Bundle: Vite separa `react`, `react-dom`, `react-bootstrap` y `bootstrap` en un chunk `vendor` ([vite.config.ts:11](vite.config.ts#L11)).
+Bundle: Vite separa `react` y `react-dom` en un chunk `vendor` ([vite.config.ts:11](vite.config.ts#L11)). El resto (Framer Motion, react-i18next, lenis, fontsource) se ubica en el chunk principal.
 
 ---
 
@@ -125,12 +155,12 @@ Estructuradas según las cinco categorías del curso (`Startup`, `Forbidden`, `D
 ### Startup
 - **Leer este archivo antes de cualquier edición.** Es el router del proyecto.
 - **Consultar CodeGraph primero** para preguntas estructurales (símbolos, callers, callees). Si `.codegraph/` no existe, proponer `codegraph init -i`.
-- **Usar Context7** (`mcp__context7__*`) antes de asumir APIs de React, Vite, Bootstrap, embla-carousel, lenis o react-spring — el knowledge cutoff puede no reflejar cambios recientes.
+- **Usar Context7** (`mcp__context7__*`) antes de asumir APIs de React, Vite, Tailwind CSS, Framer Motion, react-i18next, lenis o @react-spring/web — el knowledge cutoff puede no reflejar cambios recientes.
 
 ### Forbidden
 - **No commitear sin pedirlo el usuario.** Tampoco `git push`, `--force`, `--no-verify`, ni reescribir historial.
 - **No introducir dependencias nuevas** sin aprobación explícita (ver [Approval](#approval)).
-- **No reemplazar Bootstrap / React-Bootstrap** por otro framework de UI (Tailwind, MUI, Chakra, etc.) sin aprobación.
+- **No introducir librerías de UI nuevas** (MUI, Chakra, etc.) sobre el sistema Tailwind sin aprobación.
 - **No tocar `vite.config.ts`, `tsconfig*.json` ni `eslint.config.js`** salvo que la tarea lo requiera; estos archivos son contrato del build.
 - **No añadir `// @ts-ignore` ni desactivar reglas de ESLint** para silenciar errores; arreglar la causa.
 - **No crear documentación nueva (`*.md`)** salvo solicitud explícita (regla global de Claude Code).
@@ -154,9 +184,9 @@ Una tarea está terminada **solo si**:
 Requieren confirmación explícita del usuario antes de proceder:
 - Añadir cualquier dependencia a `package.json`.
 - Subir/bajar versión mayor de React, Vite o TypeScript.
-- Cambios estructurales: renombrar carpetas, mover `helpers/` o `components/`.
+- Cambios estructurales: renombrar carpetas, mover `src/components/`, `src/data/`, `src/i18n/` o `src/lib/`.
 - Operaciones git destructivas: `reset --hard`, `push --force`, `branch -D`, `clean -f`.
-- Borrar assets en `src/assets/img/projects/` (afecta a [src/helpers/projectsHelper.ts](src/helpers/projectsHelper.ts)).
+- Borrar assets en `src/assets/img/projects/` (afecta a [src/data/projects.ts](src/data/projects.ts)).
 
 ---
 
@@ -175,4 +205,4 @@ Ambos deben salir con exit code 0. Para UI, además: `npm run dev` y validación
 ## Referencias
 
 - `ai-engineering-from-scratch` — `AGENTS.md` / `CLAUDE.md` como router de contexto, fase 13 *Tools and Protocols* y fase 14 *Agent Engineering* (reglas como restricciones ejecutables, verification gates).
-- Documentación de librerías clave: React, Vite, React-Bootstrap, embla-carousel, lenis, @react-spring/web — consultar vía Context7 (`mcp__context7__resolve-library-id`).
+- Documentación de librerías clave: React, Vite, Tailwind CSS, Framer Motion, react-i18next, lenis, @react-spring/web — consultar vía Context7 (`mcp__context7__resolve-library-id`).

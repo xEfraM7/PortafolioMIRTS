@@ -1,0 +1,113 @@
+{
+  "nav": { "work": "Work", "about": "About", "contact": "Contact", "cta": "Let's talk", "openMenu": "Open menu", "closeMenu": "Close menu" },
+  "footer": { "rights": "All rights reserved.", "built": "Designed and built by Efrain Cabrera." },
+  "hero": {
+    "status": "Available for new projects",
+    "titles": [
+      "Forward Deployed Engineer",
+      "Full-Stack AI Developer",
+      "Software Engineer"
+    ],
+    "subtitle": "I build scalable, AI-first web and mobile products with React, Next.js, Laravel and React Native — focused on real impact in production.",
+    "primaryCta": "See selected work",
+    "secondaryCta": "Read about me",
+    "scrollCue": "scroll"
+  },
+  "about": {
+    "index": "02",
+    "label": "About",
+    "p1": "Full-Stack developer with 5+ years building scalable, responsive web and mobile products. I work primarily with React, Next.js, Laravel, Nest.js and React Native.",
+    "p2": "I specialize in production AI products: from offline-first healthcare PWAs with LlamaIndex document processing (MediClarity) to multi-tenant gym operations on Supabase (Madbox) and B2B2C mobile platforms with Stripe Connect auto-payouts (Perfect Book). I've shipped across healthcare, beauty, hospitality and construction — leading frontend architecture and designing secure multi-tenant systems with Row-Level Security.",
+    "p3": "I'm passionate about performance optimization, clean UI/UX, and working end-to-end with multidisciplinary teams. I'm currently exploring modern stacks like Bun + TanStack Start + Convex, always with an AI-first approach.",
+    "stats": {
+      "years": { "value": "5+", "label": "years shipping software" },
+      "madbox": { "value": "+95%", "label": "billing accuracy · Madbox" },
+      "mediclarity": { "value": "−60%", "label": "clinical history reading time · MediClarity" }
+    }
+  },
+  "work": {
+    "index": "03",
+    "label": "Selected Work",
+    "meta": "Featured",
+    "labels": {
+      "role": "Role",
+      "stack": "Stack",
+      "outcome": "Outcome",
+      "client": "Client",
+      "year": "Year",
+      "sector": "Sector"
+    },
+    "actions": {
+      "visit": "Visit live",
+      "readCase": "Read case study"
+    }
+  },
+  "moreWork": { "index": "04", "label": "More Work" },
+  "contact": {
+    "index": "05",
+    "label": "Contact",
+    "kicker": "Let's talk",
+    "title": "Let's build something real.",
+    "subtitle": "I respond within a business day.",
+    "ctaEmail": "Email me",
+    "ctaSchedule": "Schedule a call",
+    "ctaLinkedIn": "Message on LinkedIn",
+    "ctaGitHub": "GitHub"
+  },
+  "projects": {
+    "perfectBook": {
+      "role": "Mobile + full-stack developer",
+      "problem": "Barbers, shop owners and clients had no single platform for bookings, payouts and team management — payments and shifts lived across WhatsApp and spreadsheets.",
+      "solution": "Built a B2B2C React Native app (iOS + web) on Expo + Supabase with 4 user roles, Stripe Connect auto-payouts, Pago Móvil manual flow and subscription gating.",
+      "outcome": "Live on the App Store with multi-role experiences, multi-currency wallet (USD + VES) and onboarding for both shops and independent professionals."
+    },
+    "madbox": {
+      "role": "Full-stack developer",
+      "problem": "Gym admins juggled multi-currency billing, member status, six payment methods and monthly closures by hand — slow and error-prone.",
+      "solution": "Built a Next.js + Supabase platform with RBAC, automated payment follow-up, multi-currency rates (BCV / Binance USDT / custom), WOD scheduling, member portal and immutable monthly snapshots.",
+      "outcome": "+95% billing accuracy, −50% admin workload and zero unauthorized access incidents."
+    },
+    "mediclarity": {
+      "role": "Full-stack developer",
+      "problem": "Patients struggled to understand fragmented medical records, and providers had no unified view of their care across documents and devices.",
+      "solution": "Built an offline-first PWA with Supabase Auth + RLS, LlamaIndex document analysis, Realtime collaboration, wearable integration and a chat-based AI health assistant.",
+      "outcome": "Two role-based experiences (patients + providers) shipped with HIPAA-ready architecture, medication tracking and AI-powered insights."
+    },
+    "damasco": {
+      "role": "Full development",
+      "problem": "Café Damasco needed a public-facing site that reflected its specialty-coffee brand and drove walk-ins.",
+      "solution": "Built a Next.js + Tailwind marketing site with menu, location and brand storytelling.",
+      "outcome": "Live brand site for the café's day-to-day customer-facing presence."
+    },
+    "contractor": {
+      "role": "Full-stack developer",
+      "problem": "Construction teams ran documents, AI extraction and voice agent calls across disconnected tools — no single source of truth for jobs and knowledge.",
+      "solution": "Built a Next.js 15 platform on Supabase with OpenAI document extraction, embeddings and retrieval chat, plus Retell voice/chat agent workflows; async jobs run on Upstash QStash with inline fallback.",
+      "outcome": "Production-ready ops platform unifying document ingestion, AI knowledge retrieval and voice-agent calls for construction teams."
+    },
+    "librarian": {
+      "role": "Auth + UI developer",
+      "problem": "A bookstore was running its in-house library by hand — inventory, members and lending were hard to track and audit.",
+      "solution": "Built a library management system as a university project covering inventory, member accounts and lending flows.",
+      "outcome": "The bookstore reorganized its day-to-day library operations on top of the system."
+    },
+    "biocure": {
+      "role": "Landing developer",
+      "problem": "bioCure Prime needed a high-conversion landing to drive 15-minute intro-call bookings for their hormone health program.",
+      "solution": "Built a marketing site focused on clarity, social proof and a single primary CTA.",
+      "outcome": "Live landing driving free intro calls with physicians."
+    },
+    "primefx": {
+      "role": "Full-stack developer",
+      "problem": "Prime FX needed an investment platform that automatically computed and distributed daily interest on crypto holdings.",
+      "solution": "Implemented financial logic in Laravel with cron jobs processing returns every 24h according to configured rates.",
+      "outcome": "Automated daily interest distribution running in production."
+    },
+    "billGenerator": {
+      "role": "Solo developer",
+      "problem": "Internal billing was fully manual — slow and error-prone.",
+      "solution": "Built a Next.js + Zustand tool that automated bill generation end-to-end.",
+      "outcome": "Client adopted it and reported a happier, faster billing workflow."
+    }
+  }
+}
