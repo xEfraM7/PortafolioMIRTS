@@ -4,10 +4,10 @@ import { SectionHeader } from "../primitives/SectionHeader";
 import { fadeUp, stagger, sectionViewport } from "../../lib/motion";
 
 const stats = [
-  { value: "3+", key: "about.stats.years" },
-  { value: "9", key: "about.stats.projects" },
-  { value: "5", key: "about.stats.industries" },
-  { value: "2", key: "about.stats.mobile" },
+  { value: "3+", labelKey: "about.stats.years" },
+  { value: "9", labelKey: "about.stats.projects" },
+  { value: "5", labelKey: "about.stats.industries" },
+  { value: "2", labelKey: "about.stats.mobile" },
 ];
 
 export const About = () => {
@@ -22,7 +22,7 @@ export const About = () => {
       className="container-page py-section-y-sm md:py-section-y"
       aria-label={t("about.label")}
     >
-      <SectionHeader index={t("about.index")} label={t("about.label").toUpperCase()} />
+      <SectionHeader index={t("about.index")} label={t("about.label")} />
       <div className="mt-12 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-7 space-y-6 text-pretty text-lg leading-relaxed text-text-secondary">
           <motion.p variants={fadeUp} className="text-text-primary text-xl">
@@ -36,12 +36,12 @@ export const About = () => {
           className="md:col-span-5 grid grid-cols-2 gap-y-8 gap-x-6 self-start border-l border-border pl-8"
         >
           {stats.map((s) => (
-            <div key={s.key}>
+            <div key={s.labelKey}>
               <dt className="font-display text-4xl font-semibold tracking-tightest text-text-primary">
                 {s.value}
               </dt>
               <dd className="mt-1 font-mono text-[11px] uppercase tracking-tighter text-text-tertiary">
-                {t(s.key)}
+                {t(s.labelKey)}
               </dd>
             </div>
           ))}
