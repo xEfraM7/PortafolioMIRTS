@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://[YOUR_DOMAIN]/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://[YOUR_DOMAIN]/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://[YOUR_DOMAIN]/?lang=es" />
+    <loc>https://portafolio-mirts.vercel.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://portafolio-mirts.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://portafolio-mirts.vercel.app/?lang=es" />
   </url>
 </urlset>

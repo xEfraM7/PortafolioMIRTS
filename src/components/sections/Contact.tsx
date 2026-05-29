@@ -7,10 +7,7 @@ import { fadeUp, stagger, sectionViewport } from "../../lib/motion";
 
 const EMAIL = "efraincabrera35@gmail.com";
 const LINKEDIN = "https://www.linkedin.com/in/efrain-cabrera-b25489216/";
-const CALENDLY_PLACEHOLDER = "[CALENDLY_URL_TBD]";
-const CALENDLY = CALENDLY_PLACEHOLDER; // replace with real URL when ready
-
-const hasCalendly = CALENDLY !== CALENDLY_PLACEHOLDER;
+const CALENDLY = "https://calendly.com/efraincabrera35/30min";
 
 export const Contact = () => {
   const { t } = useTranslation();
@@ -45,17 +42,15 @@ export const Contact = () => {
           <MagneticButton as="a" href={`mailto:${EMAIL}`} variant="primary">
             {t("contact.ctaEmail")} <ArrowUpRight className="h-3.5 w-3.5" />
           </MagneticButton>
-          {hasCalendly ? (
-            <MagneticButton
-              as="a"
-              href={CALENDLY}
-              variant="secondary"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t("contact.ctaSchedule")} <ArrowUpRight className="h-3.5 w-3.5" />
-            </MagneticButton>
-          ) : null}
+          <MagneticButton
+            as="a"
+            href={CALENDLY}
+            variant="secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("contact.ctaSchedule")} <ArrowUpRight className="h-3.5 w-3.5" />
+          </MagneticButton>
           <MagneticButton
             as="a"
             href={LINKEDIN}
