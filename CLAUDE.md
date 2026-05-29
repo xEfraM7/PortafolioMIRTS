@@ -126,11 +126,11 @@ Aplicado al stack React/TS:
 - **O — Open/Closed**: extender vía props, `children`, o composición; no editar componentes existentes para casos especiales (`if (variantX)` proliferando).
 - **L — Liskov Substitution**: si un componente acepta `ReactNode`, cualquier nodo válido debe funcionar. No asumir tipos concretos dentro.
 - **I — Interface Segregation**: tipar props con lo mínimo necesario. Evitar `props: any` o interfaces gigantes compartidas; partir en tipos pequeños por componente.
-- **D — Dependency Inversion**: los componentes dependen de **datos** (props), no de fuentes concretas. La data viene de `helpers/` o props, no de imports globales dentro del JSX.
+- **D — Dependency Inversion**: los componentes dependen de **datos** (props), no de fuentes concretas. La data viene de `src/data/` o props, no de imports globales dentro del JSX.
 
 ### DRY — *Don't Repeat Yourself*
 Una pieza de conocimiento vive en **un** lugar.
-- Data de proyectos → [src/helpers/projectsHelper.ts](src/helpers/projectsHelper.ts). Breakpoints → [src/helpers/responsiveHelper.ts](src/helpers/responsiveHelper.ts). Íconos → [src/helpers/iconsHelper.ts](src/helpers/iconsHelper.ts).
+- Data de proyectos → [src/data/projects.ts](src/data/projects.ts). Experience → [src/data/experience.ts](src/data/experience.ts). Copy bilingüe → [src/i18n/en.json](src/i18n/en.json) y [src/i18n/es.json](src/i18n/es.json). Variants de motion → [src/lib/motion.ts](src/lib/motion.ts).
 - Si copias un bloque JSX dos veces, en la tercera **extráelo** a componente.
 - **Cuidado con DRY prematuro**: dos bloques que se parecen pero evolucionan distinto NO son duplicación. YAGNI gana sobre DRY si la abstracción aún no es obvia.
 
@@ -146,7 +146,7 @@ Una pieza de conocimiento vive en **un** lugar.
 | `npm run build`    | Type-check (`tsc -b`) + bundle de producción (`vite build`).  |
 | `npm run preview`  | Sirve el bundle de `dist/` para validar build de producción.  |
 
-Bundle: Vite separa `react`, `react-dom`, `react-bootstrap` y `bootstrap` en un chunk `vendor` ([vite.config.ts:11](vite.config.ts#L11)).
+Bundle: Vite separa `react` y `react-dom` en un chunk `vendor` ([vite.config.ts:11](vite.config.ts#L11)). El resto (Framer Motion, react-i18next, lenis, fontsource) se ubica en el chunk principal.
 
 ---
 
@@ -157,7 +157,7 @@ Estructuradas según las cinco categorías del curso (`Startup`, `Forbidden`, `D
 ### Startup
 - **Leer este archivo antes de cualquier edición.** Es el router del proyecto.
 - **Consultar CodeGraph primero** para preguntas estructurales (símbolos, callers, callees). Si `.codegraph/` no existe, proponer `codegraph init -i`.
-- **Usar Context7** (`mcp__context7__*`) antes de asumir APIs de React, Vite, Bootstrap, embla-carousel, lenis o react-spring — el knowledge cutoff puede no reflejar cambios recientes.
+- **Usar Context7** (`mcp__context7__*`) antes de asumir APIs de React, Vite, Tailwind CSS, Framer Motion, react-i18next, lenis o @react-spring/web — el knowledge cutoff puede no reflejar cambios recientes.
 
 ### Forbidden
 - **No commitear sin pedirlo el usuario.** Tampoco `git push`, `--force`, `--no-verify`, ni reescribir historial.
@@ -186,9 +186,9 @@ Una tarea está terminada **solo si**:
 Requieren confirmación explícita del usuario antes de proceder:
 - Añadir cualquier dependencia a `package.json`.
 - Subir/bajar versión mayor de React, Vite o TypeScript.
-- Cambios estructurales: renombrar carpetas, mover `helpers/` o `components/`.
+- Cambios estructurales: renombrar carpetas, mover `src/components/`, `src/data/`, `src/i18n/` o `src/lib/`.
 - Operaciones git destructivas: `reset --hard`, `push --force`, `branch -D`, `clean -f`.
-- Borrar assets en `src/assets/img/projects/` (afecta a [src/helpers/projectsHelper.ts](src/helpers/projectsHelper.ts)).
+- Borrar assets en `src/assets/img/projects/` (afecta a [src/data/projects.ts](src/data/projects.ts)).
 
 ---
 
@@ -207,4 +207,4 @@ Ambos deben salir con exit code 0. Para UI, además: `npm run dev` y validación
 ## Referencias
 
 - `ai-engineering-from-scratch` — `AGENTS.md` / `CLAUDE.md` como router de contexto, fase 13 *Tools and Protocols* y fase 14 *Agent Engineering* (reglas como restricciones ejecutables, verification gates).
-- Documentación de librerías clave: React, Vite, React-Bootstrap, embla-carousel, lenis, @react-spring/web — consultar vía Context7 (`mcp__context7__resolve-library-id`).
+- Documentación de librerías clave: React, Vite, Tailwind CSS, Framer Motion, react-i18next, lenis, @react-spring/web — consultar vía Context7 (`mcp__context7__resolve-library-id`).
