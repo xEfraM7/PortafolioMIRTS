@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "@fontsource-variable/geist";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/500.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-base: 7 8 15;
+    --bg-surface: 14 16 25;
+    --bg-elevated: 22 25 39;
+    --border: 35 38 54;
+    --border-strong: 47 51 71;
+
+    --text-primary: 232 233 241;
+    --text-secondary: 148 152 168;
+    --text-tertiary: 92 96 117;
+    --text-mono: 184 188 208;
+
+    --aurora-violet: 124 92 255;
+    --aurora-teal: 45 212 191;
+    --aurora-pink: 244 114 182;
+
+    --status-live: 52 211 153;
+    --status-warn: 251 191 36;
+    --status-error: 248 113 113;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  html,
+  body,
+  #root {
+    background-color: rgb(var(--bg-base));
+    color: rgb(var(--text-primary));
+  }
+
+  body {
+    @apply font-sans antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: rgb(var(--aurora-violet) / 0.3);
+    color: white;
+  }
+
+  *:focus-visible {
+    outline: 2px solid rgb(var(--aurora-violet));
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer utilities {
+  .container-page {
+    @apply mx-auto w-full max-w-container px-6 sm:px-8 lg:px-12;
+  }
+
+  .container-hero {
+    @apply mx-auto w-full max-w-hero px-6 sm:px-8 lg:px-12;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
 }
