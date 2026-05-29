@@ -8,5 +8,18 @@
     "primaryCta": "Ver proyectos destacados",
     "secondaryCta": "Sobre mí",
     "scrollCue": "scroll"
+  },
+  "about": {
+    "index": "02",
+    "label": "Sobre mí",
+    "p1": "3+ años construyendo sistemas en producción para equipos de hospitalidad, real estate, healthcare y logística. Ingeniero Informático.",
+    "p2": "Estoy transicionando a Forward Deployment — embebido junto al equipo del cliente para entregar los sistemas que realmente necesita, no los que asumió la spec.",
+    "p3": "Stack: React, Next.js, Node, Laravel, React Native. Apps móviles activas en Google Play. He liderado arquitectura frontend en SaaS multi-tenant.",
+    "stats": {
+      "years": "años publicando",
+      "projects": "proyectos en producción",
+      "industries": "industrias",
+      "mobile": "apps móviles activas"
+    }
   }
 }

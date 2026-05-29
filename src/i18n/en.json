@@ -8,5 +8,18 @@
     "primaryCta": "See selected work",
     "secondaryCta": "Read about me",
     "scrollCue": "scroll"
+  },
+  "about": {
+    "index": "02",
+    "label": "About",
+    "p1": "3+ years building production systems for hospitality, real estate, healthcare, and logistics teams. Computer Engineering background.",
+    "p2": "I'm transitioning into Forward Deployment — embedding directly with client teams to ship the systems they actually need, not the ones a spec assumed.",
+    "p3": "Stack: React, Next.js, Node, Laravel, React Native. Mobile apps live on Google Play. Lead frontend architecture on multi-tenant SaaS.",
+    "stats": {
+      "years": "years shipping",
+      "projects": "production projects",
+      "industries": "industries",
+      "mobile": "live mobile apps"
+    }
   }
 }

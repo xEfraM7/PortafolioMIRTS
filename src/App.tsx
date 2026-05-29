@@ -4,6 +4,7 @@ import { ReactLenis } from "lenis/react";
 import { NavBar } from "./components/layout/NavBar";
 import { Footer } from "./components/layout/Footer";
 import { Hero } from "./components/sections/Hero";
+import { About } from "./components/sections/About";
 
 export const App = () => {
   const { i18n } = useTranslation();
@@ -17,9 +18,7 @@ export const App = () => {
       <NavBar />
       <main className="pt-16">
         <Hero />
-        <section id="about" className="container-page py-section-y-sm">
-          <p className="font-mono text-xs uppercase tracking-tighter text-text-tertiary">02 — about</p>
-        </section>
+        <About />
         <section id="work" className="container-page py-section-y-sm">
           <p className="font-mono text-xs uppercase tracking-tighter text-text-tertiary">03 — selected work</p>
         </section>
