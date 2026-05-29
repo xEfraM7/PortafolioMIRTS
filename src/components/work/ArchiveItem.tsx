@@ -22,7 +22,12 @@ export const ArchiveItem = ({ project }: Props) => {
   );
   if (project.liveUrl) {
     return (
-      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+      <a
+        href={project.liveUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`${project.client} — open live site`}
+      >
         {content}
       </a>
     );
