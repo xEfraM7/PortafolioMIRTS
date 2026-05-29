@@ -82,7 +82,7 @@ export const FeaturedProjectCard = ({ project, index }: Props) => {
           <div className="relative aspect-[4/3] overflow-hidden rounded-card border border-border">
             <img
               src={project.imgUrl}
-              alt={`${project.client} interface`}
+              alt={`${project.client} — ${project.sector} interface`}
               loading="lazy"
               decoding="async"
               className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
