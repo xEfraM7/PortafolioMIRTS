@@ -41,6 +41,28 @@
   },
   "moreWork": { "index": "04", "label": "Más Proyectos" },
   "archive": { "index": "05", "label": "Archivo", "viewLabel": "Ver" },
+  "experience": {
+    "index": "06",
+    "label": "Experiencia",
+    "present": "Presente",
+    "entries": {
+      "tbd-current": {
+        "role": "[TBD: Cargo actual ES]",
+        "wins": {
+          "0": "[TBD: Logro 1 ES — frase corta con verbo]",
+          "1": "[TBD: Logro 2 ES — frase corta con verbo]",
+          "2": "[TBD: Logro 3 ES — frase corta con verbo]"
+        }
+      },
+      "tbd-previous": {
+        "role": "[TBD: Cargo anterior ES]",
+        "wins": {
+          "0": "[TBD: Logro 1 ES — frase corta con verbo]",
+          "1": "[TBD: Logro 2 ES — frase corta con verbo]"
+        }
+      }
+    }
+  },
   "projects": {
     "supraca": {
       "role": "Frontend lead",

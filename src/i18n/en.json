@@ -41,6 +41,28 @@
   },
   "moreWork": { "index": "04", "label": "More Work" },
   "archive": { "index": "05", "label": "Archive", "viewLabel": "View" },
+  "experience": {
+    "index": "06",
+    "label": "Experience",
+    "present": "Present",
+    "entries": {
+      "tbd-current": {
+        "role": "[TBD: Current role title EN]",
+        "wins": {
+          "0": "[TBD: Win 1 EN — short verb-led sentence]",
+          "1": "[TBD: Win 2 EN — short verb-led sentence]",
+          "2": "[TBD: Win 3 EN — short verb-led sentence]"
+        }
+      },
+      "tbd-previous": {
+        "role": "[TBD: Previous role title EN]",
+        "wins": {
+          "0": "[TBD: Win 1 EN — short verb-led sentence]",
+          "1": "[TBD: Win 2 EN — short verb-led sentence]"
+        }
+      }
+    }
+  },
   "projects": {
     "supraca": {
       "role": "Frontend lead",
