@@ -3,13 +3,16 @@ import { motion, useMotionValue, useSpring, useReducedMotion } from "framer-moti
 
 type Props = { className?: string };
 
+const ORB_PARALLAX_STRENGTH = 0.3;
+const ORB_SPRING = { stiffness: 50, damping: 20, mass: 1.2 } as const;
+
 export const AuroraOrb = ({ className }: Props) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const reduce = useReducedMotion();
   const x = useMotionValue(0);
   const y = useMotionValue(0);
-  const sx = useSpring(x, { stiffness: 50, damping: 20, mass: 1.2 });
-  const sy = useSpring(y, { stiffness: 50, damping: 20, mass: 1.2 });
+  const sx = useSpring(x, ORB_SPRING);
+  const sy = useSpring(y, ORB_SPRING);
 
   useEffect(() => {
     if (reduce) return;
@@ -27,8 +30,8 @@ export const AuroraOrb = ({ className }: Props) => {
       }
       const cx = rect.left + rect.width / 2;
       const cy = rect.top + rect.height / 2;
-      x.set((e.clientX - cx) * 0.3);
-      y.set((e.clientY - cy) * 0.3);
+      x.set((e.clientX - cx) * ORB_PARALLAX_STRENGTH);
+      y.set((e.clientY - cy) * ORB_PARALLAX_STRENGTH);
     };
     window.addEventListener("mousemove", onMove, { passive: true });
     return () => window.removeEventListener("mousemove", onMove);
