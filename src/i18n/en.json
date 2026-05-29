@@ -1,10 +1,14 @@
 {
-  "nav": { "work": "Work", "about": "About", "contact": "Contact", "cta": "Let's talk" },
+  "nav": { "work": "Work", "about": "About", "experience": "Experience", "contact": "Contact", "cta": "Let's talk", "openMenu": "Open menu", "closeMenu": "Close menu" },
   "footer": { "rights": "All rights reserved.", "built": "Designed and built by Efrain Cabrera." },
   "hero": {
-    "status": "Available for FDE engagements",
-    "title": "Forward Deployment Engineer.",
-    "subtitle": "I ship production software where it's used — on-site with the teams that run the business.",
+    "status": "Available for new projects",
+    "titles": [
+      "Forward Deployed Engineer",
+      "Full-Stack AI Developer",
+      "Software Engineer"
+    ],
+    "subtitle": "I build scalable, AI-first web and mobile products with React, Next.js, Laravel and React Native — focused on real impact in production.",
     "primaryCta": "See selected work",
     "secondaryCta": "Read about me",
     "scrollCue": "scroll"
@@ -12,14 +16,13 @@
   "about": {
     "index": "02",
     "label": "About",
-    "p1": "3+ years building production systems for hospitality, real estate, healthcare, and logistics teams. Computer Engineering background.",
-    "p2": "I'm transitioning into Forward Deployment — embedding directly with client teams to ship the systems they actually need, not the ones a spec assumed.",
-    "p3": "Stack: React, Next.js, Node, Laravel, React Native. Mobile apps live on Google Play. Lead frontend architecture on multi-tenant SaaS.",
+    "p1": "Full-Stack developer with 5+ years building scalable, responsive web and mobile products. I work primarily with React, Next.js, Laravel, Nest.js and React Native.",
+    "p2": "I specialize in applied-AI products: from construction cost estimation with blueprint analysis (GPT-5) to voice AI for field use. I've shipped solutions for construction, hospitality, real estate and healthcare, leading frontend architecture and designing secure multi-tenant systems with Row-Level Security.",
+    "p3": "I'm passionate about performance optimization, clean UI/UX, and working end-to-end with multidisciplinary teams. I'm currently exploring modern stacks like Bun + TanStack Start + Convex, always with an AI-first approach.",
     "stats": {
-      "years": "years shipping",
-      "projects": "production projects",
-      "industries": "industries",
-      "mobile": "live mobile apps"
+      "years": { "value": "5+", "label": "years of experience" },
+      "supplai": { "value": "−80%", "label": "estimation time · SupplAI" },
+      "madbox": { "value": "+95%", "label": "billing accuracy · Madbox" }
     }
   },
   "work": {
@@ -46,19 +49,34 @@
     "label": "Experience",
     "present": "Present",
     "entries": {
-      "tbd-current": {
-        "role": "[TBD: Current role title EN]",
+      "code-in-the-web": {
+        "role": "Full-Stack Developer",
         "wins": {
-          "0": "[TBD: Win 1 EN — short verb-led sentence]",
-          "1": "[TBD: Win 2 EN — short verb-led sentence]",
-          "2": "[TBD: Win 3 EN — short verb-led sentence]"
+          "0": "Restaurant management app and high-conversion landing (+35% conversion).",
+          "1": "Bills app for residential condos and React Native mobile app live on Google Play.",
+          "2": "Madbox system and dashboards built with Next.js + Supabase."
         }
       },
-      "tbd-previous": {
-        "role": "[TBD: Previous role title EN]",
+      "cream-digital": {
+        "role": "Full-Stack Software AI Developer",
         "wins": {
-          "0": "[TBD: Win 1 EN — short verb-led sentence]",
-          "1": "[TBD: Win 2 EN — short verb-led sentence]"
+          "0": "GPT-5 blueprint analysis with 80% accuracy on construction cost estimation.",
+          "1": "Secure multi-tenant architecture with Row-Level Security on Supabase.",
+          "2": "Voice AI integration (Retell) for field use."
+        }
+      },
+      "valdusoft": {
+        "role": "Backend Developer",
+        "wins": {
+          "0": "Scalable RESTful APIs in Laravel 11 (−30% production bugs).",
+          "1": "MySQL query optimization (−35% load time).",
+          "2": "API documentation with Laravel Scribe and Postman."
+        }
+      },
+      "sempiterno": {
+        "role": "Frontend Developer",
+        "wins": {
+          "0": "[TBD: Sempiterno win EN — short verb-led sentence]"
         }
       }
     }
@@ -67,11 +85,12 @@
     "index": "07",
     "label": "Contact",
     "kicker": "Let's talk",
-    "title": "If your team is shipping something real, I'd like to hear about it.",
+    "title": "Let's build something real.",
     "subtitle": "I respond within a business day.",
     "ctaEmail": "Email me",
     "ctaSchedule": "Schedule a call",
-    "ctaLinkedIn": "Message on LinkedIn"
+    "ctaLinkedIn": "Message on LinkedIn",
+    "ctaGitHub": "GitHub"
   },
   "projects": {
     "supraca": {
@@ -93,16 +112,16 @@
       "outcome": "[TBD: HIS outcome EN — 1 sentence with metric if known]"
     },
     "projectR": {
-      "role": "Frontend developer",
+      "role": "Full-stack developer",
       "problem": "[TBD: Project R problem EN]",
       "solution": "[TBD: Project R solution EN]",
       "outcome": "[TBD: Project R outcome EN — 1 short sentence]"
     },
     "madbox": {
       "role": "Dashboard developer",
-      "problem": "[TBD: Madbox problem EN]",
-      "solution": "[TBD: Madbox solution EN]",
-      "outcome": "[TBD: Madbox outcome EN — 1 short sentence]"
+      "problem": "Gym management with multi-currency billing and member status tracking became manual and error-prone.",
+      "solution": "Built a Next.js + Supabase platform with RBAC, automated payment follow-up and unified member state.",
+      "outcome": "+95% billing accuracy, −50% admin workload, zero unauthorized access incidents."
     },
     "contractor": {
       "role": "Dashboard developer",
@@ -121,13 +140,6 @@
       "problem": "[TBD: Bill Generator problem EN]",
       "solution": "[TBD: Bill Generator solution EN]",
       "outcome": "[TBD: Bill Generator outcome EN — 1 short sentence]"
-    },
-    "journal": {
-      "role": "Solo developer",
-      "problem": "[TBD: Journal problem EN]",
-      "solution": "[TBD: Journal solution EN]",
-      "outcome": "[TBD: Journal outcome EN — 1 short sentence]"
     }
   }
 }
-

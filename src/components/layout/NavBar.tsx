@@ -5,16 +5,22 @@ import { cn } from "../../lib/cn";
 import { Logo } from "../icons/Logo";
 import { LanguageToggle } from "./LanguageToggle";
 import { MagneticButton } from "../primitives/MagneticButton";
+import { MobileNavToggle } from "./MobileNavToggle";
+import { MobileNavPanel } from "./MobileNavPanel";
 
 const links = [
   { id: "work", labelKey: "nav.work", href: "#work" },
   { id: "about", labelKey: "nav.about", href: "#about" },
+  { id: "experience", labelKey: "nav.experience", href: "#experience" },
   { id: "contact", labelKey: "nav.contact", href: "#contact" },
 ];
+
+const MD_BREAKPOINT = 768;
 
 export const NavBar = () => {
   const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -23,6 +29,19 @@ export const NavBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Auto-close mobile menu when viewport reaches md breakpoint
+  useEffect(() => {
+    const mediaQuery = window.matchMedia(`(min-width: ${MD_BREAKPOINT}px)`);
+    const onBreakpoint = (e: MediaQueryListEvent) => {
+      if (e.matches) setMobileOpen(false);
+    };
+    mediaQuery.addEventListener("change", onBreakpoint);
+    return () => mediaQuery.removeEventListener("change", onBreakpoint);
+  }, []);
+
+  const handleToggle = () => setMobileOpen((prev) => !prev);
+  const handleClose = () => setMobileOpen(false);
+
   return (
     <motion.header
       initial={{ opacity: 0, y: -8 }}
@@ -30,7 +49,7 @@ export const NavBar = () => {
       transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
       className={cn(
         "fixed inset-x-0 top-0 z-50 transition-colors",
-        scrolled
+        scrolled || mobileOpen
           ? "border-b border-border/60 bg-bg-base/80 backdrop-blur"
           : "border-b border-transparent bg-transparent"
       )}
@@ -58,8 +77,16 @@ export const NavBar = () => {
           <MagneticButton as="a" href="#contact" variant="primary" className="hidden md:inline-flex">
             {t("nav.cta")}
           </MagneticButton>
+          <MobileNavToggle
+            open={mobileOpen}
+            onToggle={handleToggle}
+            openLabel={t("nav.openMenu")}
+            closeLabel={t("nav.closeMenu")}
+          />
         </div>
       </div>
+
+      <MobileNavPanel open={mobileOpen} onClose={handleClose} links={links} />
     </motion.header>
   );
 };

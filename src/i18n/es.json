@@ -1,10 +1,14 @@
 {
-  "nav": { "work": "Proyectos", "about": "Sobre mí", "contact": "Contacto", "cta": "Conversemos" },
+  "nav": { "work": "Proyectos", "about": "Sobre mí", "experience": "Experiencia", "contact": "Contacto", "cta": "Conversemos", "openMenu": "Abrir menú", "closeMenu": "Cerrar menú" },
   "footer": { "rights": "Todos los derechos reservados.", "built": "Diseñado y desarrollado por Efrain Cabrera." },
   "hero": {
-    "status": "Disponible para proyectos FDE",
-    "title": "Forward Deployment Engineer.",
-    "subtitle": "Despliego software de producción donde se usa — junto a los equipos que mueven el negocio.",
+    "status": "Disponible para nuevos proyectos",
+    "titles": [
+      "Forward Deployed Engineer",
+      "Desarrollador Full-Stack IA",
+      "Ingeniero de Software"
+    ],
+    "subtitle": "Construyo productos web y móviles escalables con enfoque IA-first usando React, Next.js, Laravel y React Native — con impacto real en producción.",
     "primaryCta": "Ver proyectos destacados",
     "secondaryCta": "Sobre mí",
     "scrollCue": "scroll"
@@ -12,14 +16,13 @@
   "about": {
     "index": "02",
     "label": "Sobre mí",
-    "p1": "3+ años construyendo sistemas en producción para equipos de hospitalidad, real estate, healthcare y logística. Ingeniero Informático.",
-    "p2": "Estoy transicionando a Forward Deployment — embebido junto al equipo del cliente para entregar los sistemas que realmente necesita, no los que asumió la spec.",
-    "p3": "Stack: React, Next.js, Node, Laravel, React Native. Apps móviles activas en Google Play. He liderado arquitectura frontend en SaaS multi-tenant.",
+    "p1": "Desarrollador Full-Stack con más de 5 años construyendo aplicaciones web y móviles responsivas y escalables. Trabajo principalmente con React, Next.js, Laravel, Nest.js y React Native.",
+    "p2": "Me he especializado en productos con IA aplicada: desde plataformas de estimación de costos con análisis de planos (GPT-5) hasta integración de IA de voz para uso en campo. He desarrollado soluciones para construcción, hospitalidad, bienes raíces y salud, liderando arquitecturas frontend y diseñando sistemas multi-tenant seguros con Row-Level Security.",
+    "p3": "Me apasiona la optimización del rendimiento, el diseño UI/UX limpio y el trabajo con equipos multidisciplinarios de punta a punta. Actualmente exploro stacks modernos como Bun + TanStack Start + Convex, siempre con un enfoque IA-first.",
     "stats": {
-      "years": "años publicando",
-      "projects": "proyectos en producción",
-      "industries": "industrias",
-      "mobile": "apps móviles activas"
+      "years": { "value": "5+", "label": "años de experiencia" },
+      "supplai": { "value": "−80%", "label": "tiempo de estimación · SupplAI" },
+      "madbox": { "value": "+95%", "label": "precisión facturación · Madbox" }
     }
   },
   "work": {
@@ -46,19 +49,34 @@
     "label": "Experiencia",
     "present": "Presente",
     "entries": {
-      "tbd-current": {
-        "role": "[TBD: Cargo actual ES]",
+      "code-in-the-web": {
+        "role": "Desarrollador Full-Stack",
         "wins": {
-          "0": "[TBD: Logro 1 ES — frase corta con verbo]",
-          "1": "[TBD: Logro 2 ES — frase corta con verbo]",
-          "2": "[TBD: Logro 3 ES — frase corta con verbo]"
+          "0": "App de gestión para restaurantes y landing de alta conversión (+35%).",
+          "1": "App de pagos para condominios residenciales y app móvil React Native en Google Play.",
+          "2": "Sistema Madbox y dashboards con Next.js + Supabase."
         }
       },
-      "tbd-previous": {
-        "role": "[TBD: Cargo anterior ES]",
+      "cream-digital": {
+        "role": "Desarrollador Full-Stack Software IA",
         "wins": {
-          "0": "[TBD: Logro 1 ES — frase corta con verbo]",
-          "1": "[TBD: Logro 2 ES — frase corta con verbo]"
+          "0": "Análisis de planos con GPT-5 y 80% de precisión en estimación de costos de construcción.",
+          "1": "Arquitectura multi-tenant segura con Row-Level Security sobre Supabase.",
+          "2": "Integración de IA de voz (Retell) para uso en campo."
+        }
+      },
+      "valdusoft": {
+        "role": "Desarrollador Backend",
+        "wins": {
+          "0": "APIs RESTful escalables en Laravel 11 (−30% bugs en producción).",
+          "1": "Optimización de queries MySQL (−35% tiempo de carga).",
+          "2": "Documentación de APIs con Laravel Scribe y Postman."
+        }
+      },
+      "sempiterno": {
+        "role": "Desarrollador Frontend",
+        "wins": {
+          "0": "[TBD: Logro Sempiterno ES — frase corta con verbo]"
         }
       }
     }
@@ -67,11 +85,12 @@
     "index": "07",
     "label": "Contacto",
     "kicker": "Conversemos",
-    "title": "Si tu equipo está construyendo algo real, me interesa escucharlo.",
+    "title": "Construyamos algo real.",
     "subtitle": "Respondo en menos de un día hábil.",
     "ctaEmail": "Escríbeme",
     "ctaSchedule": "Agenda una llamada",
-    "ctaLinkedIn": "Escríbeme en LinkedIn"
+    "ctaLinkedIn": "Escríbeme en LinkedIn",
+    "ctaGitHub": "GitHub"
   },
   "projects": {
     "supraca": {
@@ -93,16 +112,16 @@
       "outcome": "[TBD: HIS resultado ES — 1 frase con métrica]"
     },
     "projectR": {
-      "role": "Frontend developer",
+      "role": "Desarrollador full-stack",
       "problem": "[TBD: Project R problema ES]",
       "solution": "[TBD: Project R solución ES]",
       "outcome": "[TBD: Project R resultado ES — 1 frase corta]"
     },
     "madbox": {
       "role": "Dashboard developer",
-      "problem": "[TBD: Madbox problema ES]",
-      "solution": "[TBD: Madbox solución ES]",
-      "outcome": "[TBD: Madbox resultado ES — 1 frase corta]"
+      "problem": "Gestión de gimnasio con facturación multi-moneda y seguimiento de miembros que se volvió manual y propensa a errores.",
+      "solution": "Construí una plataforma en Next.js + Supabase con RBAC, automatización del seguimiento de pagos y estado unificado de miembros.",
+      "outcome": "+95% precisión de facturación, −50% carga administrativa y 0 accesos no autorizados."
     },
     "contractor": {
       "role": "Dashboard developer",
@@ -121,13 +140,6 @@
       "problem": "[TBD: Bill Generator problema ES]",
       "solution": "[TBD: Bill Generator solución ES]",
       "outcome": "[TBD: Bill Generator resultado ES — 1 frase corta]"
-    },
-    "journal": {
-      "role": "Solo developer",
-      "problem": "[TBD: Journal problema ES]",
-      "solution": "[TBD: Journal solución ES]",
-      "outcome": "[TBD: Journal resultado ES — 1 frase corta]"
     }
   }
 }
-
