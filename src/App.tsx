@@ -7,8 +7,6 @@ import { Hero } from "./components/sections/Hero";
 import { About } from "./components/sections/About";
 import { SelectedWork } from "./components/sections/SelectedWork";
 import { MoreWork } from "./components/sections/MoreWork";
-import { Archive } from "./components/sections/Archive";
-import { Experience } from "./components/sections/Experience";
 import { Contact } from "./components/sections/Contact";
 
 export const App = () => {
@@ -17,7 +15,7 @@ export const App = () => {
   useEffect(() => {
     const lang = i18n.resolvedLanguage ?? "en";
     document.documentElement.lang = lang;
-    document.title = "Efrain Cabrera — Forward Deployment Engineer";
+    document.title = "Efrain Cabrera — Forward Deployed Engineer & Full-Stack AI Developer";
   }, [i18n.resolvedLanguage]);
 
   return (
@@ -34,8 +32,6 @@ export const App = () => {
         <About />
         <SelectedWork />
         <MoreWork />
-        <Archive />
-        <Experience />
         <Contact />
       </main>
       <Footer />

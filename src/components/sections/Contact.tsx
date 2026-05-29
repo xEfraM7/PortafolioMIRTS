@@ -7,6 +7,7 @@ import { fadeUp, stagger, sectionViewport } from "../../lib/motion";
 
 const EMAIL = "efraincabrera35@gmail.com";
 const LINKEDIN = "https://www.linkedin.com/in/efrain-cabrera-b25489216/";
+const GITHUB = "https://github.com/xEfraM7";
 const CALENDLY = "https://calendly.com/efraincabrera35/30min";
 
 export const Contact = () => {
@@ -59,6 +60,15 @@ export const Contact = () => {
             rel="noopener noreferrer"
           >
             {t("contact.ctaLinkedIn")} <ArrowUpRight className="h-3.5 w-3.5" />
+          </MagneticButton>
+          <MagneticButton
+            as="a"
+            href={GITHUB}
+            variant="ghost"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("contact.ctaGitHub")} <ArrowUpRight className="h-3.5 w-3.5" />
           </MagneticButton>
         </motion.div>
       </div>

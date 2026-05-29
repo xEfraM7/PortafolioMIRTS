@@ -36,7 +36,7 @@ PortafolioMIRTS/
 │   └── sitemap.xml
 └── src/
     ├── main.tsx
-    ├── App.tsx                  # 7 secciones reales (NavBar→Hero→About→SelectedWork→MoreWork→Archive→Experience→Contact→Footer)
+    ├── App.tsx                  # 5 secciones reales (NavBar→Hero→About→SelectedWork→MoreWork→Contact→Footer)
     ├── index.css                # Tailwind directives + design tokens (aurora palette)
     ├── vite-env.d.ts
     ├── assets/
@@ -47,19 +47,18 @@ PortafolioMIRTS/
     │   ├── layout/
     │   │   ├── NavBar.tsx       # sticky + lang toggle + magnetic CTA
     │   │   ├── Footer.tsx
-    │   │   └── LanguageToggle.tsx
+    │   │   ├── LanguageToggle.tsx
+    │   │   ├── MobileNavToggle.tsx
+    │   │   └── MobileNavPanel.tsx
     │   ├── sections/
-    │   │   ├── Hero.tsx
+    │   │   ├── Hero.tsx         # título rotativo con AnimatePresence (3 títulos)
     │   │   ├── About.tsx
     │   │   ├── SelectedWork.tsx
     │   │   ├── MoreWork.tsx
-    │   │   ├── Archive.tsx
-    │   │   ├── Experience.tsx
     │   │   └── Contact.tsx
     │   ├── work/
     │   │   ├── FeaturedProjectCard.tsx  # Tier 1
-    │   │   ├── ProjectCard.tsx          # Tier 2
-    │   │   └── ArchiveItem.tsx          # Tier 3
+    │   │   └── ProjectCard.tsx          # Tier 2
     │   ├── primitives/
     │   │   ├── AuroraOrb.tsx
     │   │   ├── MagneticButton.tsx
@@ -77,8 +76,7 @@ PortafolioMIRTS/
     │   ├── en.json
     │   └── es.json
     ├── data/
-    │   ├── projects.ts          # 9 proyectos tipados con tier 1/2/3
-    │   └── experience.ts        # timeline tipado
+    │   └── projects.ts          # 9 proyectos tipados con tier 1 (3) / tier 2 (6)
     └── lib/
         ├── cn.ts                # clsx + tailwind-merge
         └── motion.ts            # Framer Motion variants compartidos
@@ -93,12 +91,12 @@ Tomadas del patrón `AGENTS.md` del curso (sección *Conventions*) y adaptadas a
 - **TypeScript en modo `strict`** (`tsconfig.app.json`): `noUnusedLocals`, `noUnusedParameters`, `noFallthroughCasesInSwitch` activos. No introducir `any` salvo justificación.
 - **JSX runtime**: `react-jsx` (no es necesario `import React from "react"`).
 - **Componentes**: funcionales con `export const Nombre = () => { ... }`. Un componente por archivo en `src/components/`.
-- **Datos estáticos** (proyectos, experience): viven en `src/data/`, no inline en componentes. Utilidades compartidas en `src/lib/`.
+- **Datos estáticos** (proyectos): viven en `src/data/`, no inline en componentes. Utilidades compartidas en `src/lib/`.
 - **Assets**: imágenes en `src/assets/img/` importadas como ES modules (Vite las hashea). Nunca rutas string a `/src/...`.
 - **Estilos**: Tailwind CSS utilities con design tokens en `src/index.css` (CSS custom properties, paleta aurora). Componentes propios en `src/components/`. **No** introducir librerías de UI nuevas (Bootstrap, MUI, Chakra) sin aprobación.
 - **Motion**: Framer Motion para animaciones reactivas (`fadeUp`, `stagger`, `sectionViewport` en `src/lib/motion.ts`). `prefers-reduced-motion` se respeta en primitives con motion (AuroraOrb, StatusPill, MagneticButton).
 - **i18n**: Copy en `src/i18n/{en,es}.json`, accedido vía `useTranslation()` de react-i18next. `<html lang>` lo gestiona el efecto en `App.tsx` reaccionando a `i18n.resolvedLanguage`.
-- **Datos**: Proyectos en `src/data/projects.ts` con `tier: 1 | 2 | 3` y `roleKey/problemKey/solutionKey/outcomeKey` como claves i18n. Experience en `src/data/experience.ts`.
+- **Datos**: Proyectos en `src/data/projects.ts` con `tier: 1 | 2` y `roleKey/problemKey/solutionKey/outcomeKey` como claves i18n.
 - **Scroll suave**: toda la app está envuelta en `<ReactLenis root>`; no añadir librerías de scroll alternativas.
 - **Lint**: ESLint flat config con `typescript-eslint` + `react-hooks` + `react-refresh`. `react-refresh/only-export-components` está en `warn`: si un archivo exporta más que el componente, considerar mover esos exports a `src/data/` o `src/lib/`.
 
@@ -130,7 +128,7 @@ Aplicado al stack React/TS:
 
 ### DRY — *Don't Repeat Yourself*
 Una pieza de conocimiento vive en **un** lugar.
-- Data de proyectos → [src/data/projects.ts](src/data/projects.ts). Experience → [src/data/experience.ts](src/data/experience.ts). Copy bilingüe → [src/i18n/en.json](src/i18n/en.json) y [src/i18n/es.json](src/i18n/es.json). Variants de motion → [src/lib/motion.ts](src/lib/motion.ts).
+- Data de proyectos → [src/data/projects.ts](src/data/projects.ts). Copy bilingüe → [src/i18n/en.json](src/i18n/en.json) y [src/i18n/es.json](src/i18n/es.json). Variants de motion → [src/lib/motion.ts](src/lib/motion.ts).
 - Si copias un bloque JSX dos veces, en la tercera **extráelo** a componente.
 - **Cuidado con DRY prematuro**: dos bloques que se parecen pero evolucionan distinto NO son duplicación. YAGNI gana sobre DRY si la abstracción aún no es obvia.
 

@@ -18,7 +18,7 @@ export const SelectedWork = () => {
       className="container-page py-section-y-sm md:py-section-y"
       aria-label={t("work.label")}
     >
-      <SectionHeader index={t("work.index")} label={t("work.label")} meta="2023 / 2025" />
+      <SectionHeader index={t("work.index")} label={t("work.label")} meta="2024 / 2026" />
       <div className="mt-12 space-y-8">
         {featured.map((p, i) => (
           <FeaturedProjectCard key={p.id} project={p} index={i} />

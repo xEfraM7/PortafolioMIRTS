@@ -11,7 +11,6 @@ import { MobileNavPanel } from "./MobileNavPanel";
 const links = [
   { id: "work", labelKey: "nav.work", href: "#work" },
   { id: "about", labelKey: "nav.about", href: "#about" },
-  { id: "experience", labelKey: "nav.experience", href: "#experience" },
   { id: "contact", labelKey: "nav.contact", href: "#contact" },
 ];
 

@@ -1,5 +1,5 @@
 {
-  "nav": { "work": "Proyectos", "about": "Sobre mí", "experience": "Experiencia", "contact": "Contacto", "cta": "Conversemos", "openMenu": "Abrir menú", "closeMenu": "Cerrar menú" },
+  "nav": { "work": "Proyectos", "about": "Sobre mí", "contact": "Contacto", "cta": "Conversemos", "openMenu": "Abrir menú", "closeMenu": "Cerrar menú" },
   "footer": { "rights": "Todos los derechos reservados.", "built": "Diseñado y desarrollado por Efrain Cabrera." },
   "hero": {
     "status": "Disponible para nuevos proyectos",
@@ -17,12 +17,12 @@
     "index": "02",
     "label": "Sobre mí",
     "p1": "Desarrollador Full-Stack con más de 5 años construyendo aplicaciones web y móviles responsivas y escalables. Trabajo principalmente con React, Next.js, Laravel, Nest.js y React Native.",
-    "p2": "Me he especializado en productos con IA aplicada: desde plataformas de estimación de costos con análisis de planos (GPT-5) hasta integración de IA de voz para uso en campo. He desarrollado soluciones para construcción, hospitalidad, bienes raíces y salud, liderando arquitecturas frontend y diseñando sistemas multi-tenant seguros con Row-Level Security.",
+    "p2": "Me he especializado en productos de IA en producción: desde PWAs offline-first para salud con análisis de documentos vía LlamaIndex (MediClarity), hasta operaciones multi-tenant para gimnasios sobre Supabase (Madbox) y plataformas móviles B2B2C con payouts automáticos vía Stripe Connect (Perfect Book). He entregado soluciones en salud, belleza, hospitalidad y construcción  — liderando arquitectura frontend y diseñando sistemas multi-tenant seguros con Row-Level Security.",
     "p3": "Me apasiona la optimización del rendimiento, el diseño UI/UX limpio y el trabajo con equipos multidisciplinarios de punta a punta. Actualmente exploro stacks modernos como Bun + TanStack Start + Convex, siempre con un enfoque IA-first.",
     "stats": {
-      "years": { "value": "5+", "label": "años de experiencia" },
-      "supplai": { "value": "−80%", "label": "tiempo de estimación · SupplAI" },
-      "madbox": { "value": "+95%", "label": "precisión facturación · Madbox" }
+      "years": { "value": "5+", "label": "años publicando software" },
+      "madbox": { "value": "+95%", "label": "precisión facturación · Madbox" },
+      "mediclarity": { "value": "−60%", "label": "tiempo de lectura de historias clínicas · MediClarity" }
     }
   },
   "work": {
@@ -43,46 +43,8 @@
     }
   },
   "moreWork": { "index": "04", "label": "Más Proyectos" },
-  "archive": { "index": "05", "label": "Archivo", "viewLabel": "Ver" },
-  "experience": {
-    "index": "06",
-    "label": "Experiencia",
-    "present": "Presente",
-    "entries": {
-      "code-in-the-web": {
-        "role": "Desarrollador Full-Stack",
-        "wins": {
-          "0": "App de gestión para restaurantes y landing de alta conversión (+35%).",
-          "1": "App de pagos para condominios residenciales y app móvil React Native en Google Play.",
-          "2": "Sistema Madbox y dashboards con Next.js + Supabase."
-        }
-      },
-      "cream-digital": {
-        "role": "Desarrollador Full-Stack Software IA",
-        "wins": {
-          "0": "Análisis de planos con GPT-5 y 80% de precisión en estimación de costos de construcción.",
-          "1": "Arquitectura multi-tenant segura con Row-Level Security sobre Supabase.",
-          "2": "Integración de IA de voz (Retell) para uso en campo."
-        }
-      },
-      "valdusoft": {
-        "role": "Desarrollador Backend",
-        "wins": {
-          "0": "APIs RESTful escalables en Laravel 11 (−30% bugs en producción).",
-          "1": "Optimización de queries MySQL (−35% tiempo de carga).",
-          "2": "Documentación de APIs con Laravel Scribe y Postman."
-        }
-      },
-      "sempiterno": {
-        "role": "Desarrollador Frontend",
-        "wins": {
-          "0": "[TBD: Logro Sempiterno ES — frase corta con verbo]"
-        }
-      }
-    }
-  },
   "contact": {
-    "index": "07",
+    "index": "05",
     "label": "Contacto",
     "kicker": "Conversemos",
     "title": "Construyamos algo real.",
@@ -93,53 +55,59 @@
     "ctaGitHub": "GitHub"
   },
   "projects": {
-    "supraca": {
-      "role": "Frontend lead",
-      "problem": "[TBD: Supraca problema ES — 1 frase del dolor del cliente]",
-      "solution": "[TBD: Supraca solución ES — 1 frase de qué se construyó]",
-      "outcome": "[TBD: Supraca resultado ES — 1 frase con métrica si la hay]"
+    "perfectBook": {
+      "role": "Desarrollador mobile + full-stack",
+      "problem": "Barberos, dueños de locales y clientes no tenían una sola plataforma para reservas, payouts y gestión de equipo — pagos y turnos vivían entre WhatsApp y hojas de cálculo.",
+      "solution": "Construí una app B2B2C en React Native (iOS + web) sobre Expo + Supabase con 4 roles, payouts automáticos con Stripe Connect, flujo manual de Pago Móvil y gating por suscripción.",
+      "outcome": "En vivo en la App Store con flujos por rol, wallet multi-moneda (USD + VES) y onboarding tanto para locales como profesionales independientes."
+    },
+    "madbox": {
+      "role": "Desarrollador full-stack",
+      "problem": "Los administradores del gimnasio manejaban facturación multi-moneda, estado de miembros, seis métodos de pago y cierres mensuales a mano — lento y propenso a errores.",
+      "solution": "Construí una plataforma en Next.js + Supabase con RBAC, automatización del seguimiento de pagos, tasas multi-moneda (BCV / Binance USDT / personalizada), programación de WOD, portal del miembro y cierres mensuales inmutables.",
+      "outcome": "+95% precisión de facturación, −50% carga administrativa y 0 accesos no autorizados."
+    },
+    "mediclarity": {
+      "role": "Desarrollador full-stack",
+      "problem": "Los pacientes batallaban para entender registros médicos fragmentados y los proveedores no tenían una vista unificada del cuidado a través de documentos y dispositivos.",
+      "solution": "Construí una PWA offline-first con Supabase Auth + RLS, análisis de documentos con LlamaIndex, colaboración en tiempo real, integración con wearables y un asistente de salud por chat con IA.",
+      "outcome": "Dos experiencias por rol (pacientes + proveedores) en producción con arquitectura HIPAA-ready, seguimiento de medicación e insights con IA."
     },
     "damasco": {
       "role": "Desarrollo completo",
-      "problem": "[TBD: Damasco problema ES — 1 frase]",
-      "solution": "[TBD: Damasco solución ES — 1 frase]",
-      "outcome": "[TBD: Damasco resultado ES — 1 frase con métrica]"
-    },
-    "his": {
-      "role": "Desarrollador de módulo",
-      "problem": "[TBD: HIS problema ES — 1 frase]",
-      "solution": "[TBD: HIS solución ES — 1 frase]",
-      "outcome": "[TBD: HIS resultado ES — 1 frase con métrica]"
-    },
-    "projectR": {
-      "role": "Desarrollador full-stack",
-      "problem": "[TBD: Project R problema ES]",
-      "solution": "[TBD: Project R solución ES]",
-      "outcome": "[TBD: Project R resultado ES — 1 frase corta]"
-    },
-    "madbox": {
-      "role": "Dashboard developer",
-      "problem": "Gestión de gimnasio con facturación multi-moneda y seguimiento de miembros que se volvió manual y propensa a errores.",
-      "solution": "Construí una plataforma en Next.js + Supabase con RBAC, automatización del seguimiento de pagos y estado unificado de miembros.",
-      "outcome": "+95% precisión de facturación, −50% carga administrativa y 0 accesos no autorizados."
+      "problem": "Café Damasco necesitaba un sitio público que reflejara su marca de café de especialidad y atrajera visitas al local.",
+      "solution": "Construí un sitio de marketing en Next.js + Tailwind con menú, ubicación y narrativa de marca.",
+      "outcome": "Sitio en vivo como presencia digital diaria del café."
     },
     "contractor": {
-      "role": "Dashboard developer",
-      "problem": "[TBD: Contractor problema ES]",
-      "solution": "[TBD: Contractor solución ES]",
-      "outcome": "[TBD: Contractor resultado ES — 1 frase corta]"
+      "role": "Desarrollador full-stack",
+      "problem": "Los equipos de construcción manejaban documentos, extracción con IA y llamadas con agentes de voz en herramientas desconectadas — sin una fuente única para obras y conocimiento.",
+      "solution": "Construí una plataforma en Next.js 15 sobre Supabase con extracción de documentos con OpenAI, embeddings y chat de recuperación, más flujos de agentes de voz/chat con Retell; los jobs asíncronos corren en Upstash QStash con fallback inline.",
+      "outcome": "Plataforma de operaciones lista para producción que unifica ingesta de documentos, recuperación de conocimiento con IA y llamadas con agentes de voz para construcción."
     },
     "librarian": {
       "role": "Auth + UI developer",
-      "problem": "[TBD: Librarian problema ES]",
-      "solution": "[TBD: Librarian solución ES]",
-      "outcome": "[TBD: Librarian resultado ES — 1 frase corta]"
+      "problem": "Una librería gestionaba su biblioteca interna a mano — inventario, miembros y préstamos eran difíciles de seguir y auditar.",
+      "solution": "Construí un sistema de gestión de biblioteca como proyecto universitario, cubriendo inventario, cuentas de miembros y flujos de préstamo.",
+      "outcome": "La librería reorganizó su operación diaria de biblioteca sobre el sistema."
+    },
+    "biocure": {
+      "role": "Desarrollador de landing",
+      "problem": "bioCure Prime necesitaba una landing de alta conversión para impulsar llamadas introductorias de 15 minutos a su programa de salud hormonal.",
+      "solution": "Construí un sitio enfocado en claridad, prueba social y un único CTA principal.",
+      "outcome": "Landing en vivo generando llamadas introductorias gratuitas con médicos."
+    },
+    "primefx": {
+      "role": "Desarrollador full-stack",
+      "problem": "Prime FX necesitaba una plataforma de inversión que calculara y distribuyera automáticamente intereses diarios sobre tenencias en cripto.",
+      "solution": "Implementé la lógica financiera en Laravel con cron jobs que procesan retornos cada 24h según las tasas configuradas.",
+      "outcome": "Distribución automática de intereses diarios funcionando en producción."
     },
     "billGenerator": {
       "role": "Solo developer",
-      "problem": "[TBD: Bill Generator problema ES]",
-      "solution": "[TBD: Bill Generator solución ES]",
-      "outcome": "[TBD: Bill Generator resultado ES — 1 frase corta]"
+      "problem": "La facturación interna se hacía todo manual — lento y propenso a errores.",
+      "solution": "Construí una herramienta en Next.js + Zustand que automatizó la generación de facturas de punta a punta.",
+      "outcome": "El cliente la adoptó y reportó un flujo de facturación más rápido y feliz."
     }
   }
 }

@@ -3,12 +3,7 @@ import { useTranslation } from "react-i18next";
 import { SectionHeader } from "../primitives/SectionHeader";
 import { fadeUp, stagger, sectionViewport } from "../../lib/motion";
 
-const stats = [
-  { value: "3+", labelKey: "about.stats.years" },
-  { value: "9", labelKey: "about.stats.projects" },
-  { value: "5", labelKey: "about.stats.industries" },
-  { value: "2", labelKey: "about.stats.mobile" },
-];
+const STAT_KEYS = ["years", "madbox", "mediclarity"] as const;
 
 export const About = () => {
   const { t } = useTranslation();
@@ -33,15 +28,15 @@ export const About = () => {
         </div>
         <motion.dl
           variants={fadeUp}
-          className="md:col-span-5 grid grid-cols-2 gap-y-8 gap-x-6 self-start border-l border-border pl-8"
+          className="md:col-span-5 grid grid-cols-1 gap-y-8 sm:grid-cols-2 md:grid-cols-1 self-start border-l border-border pl-8"
         >
-          {stats.map((s) => (
-            <div key={s.labelKey}>
+          {STAT_KEYS.map((key) => (
+            <div key={key}>
               <dt className="font-display text-4xl font-semibold tracking-tightest text-text-primary">
-                {s.value}
+                {t(`about.stats.${key}.value`)}
               </dt>
               <dd className="mt-1 font-mono text-[11px] uppercase tracking-tighter text-text-tertiary">
-                {t(s.labelKey)}
+                {t(`about.stats.${key}.label`)}
               </dd>
             </div>
           ))}
