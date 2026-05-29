@@ -1,12 +1,12 @@
 {
-  "nav": {
-    "work": "Work",
-    "about": "About",
-    "contact": "Contact",
-    "cta": "Let's talk"
-  },
-  "footer": {
-    "rights": "All rights reserved.",
-    "built": "Designed and built by Efrain Cabrera."
+  "nav": { "work": "Work", "about": "About", "contact": "Contact", "cta": "Let's talk" },
+  "footer": { "rights": "All rights reserved.", "built": "Designed and built by Efrain Cabrera." },
+  "hero": {
+    "status": "Available for FDE engagements",
+    "title": "Forward Deployment Engineer.",
+    "subtitle": "I ship production software where it's used — on-site with the teams that run the business.",
+    "primaryCta": "See selected work",
+    "secondaryCta": "Read about me",
+    "scrollCue": "scroll"
   }
 }

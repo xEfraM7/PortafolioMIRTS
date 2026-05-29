@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { ReactLenis } from "lenis/react";
 import { NavBar } from "./components/layout/NavBar";
 import { Footer } from "./components/layout/Footer";
+import { Hero } from "./components/sections/Hero";
 
 export const App = () => {
   const { i18n } = useTranslation();
@@ -15,9 +16,7 @@ export const App = () => {
     <ReactLenis root options={{ anchors: true }}>
       <NavBar />
       <main className="pt-16">
-        <section id="hero" className="container-hero py-section-y-sm">
-          <p className="font-mono text-xs uppercase tracking-tighter text-text-tertiary">01 — hero</p>
-        </section>
+        <Hero />
         <section id="about" className="container-page py-section-y-sm">
           <p className="font-mono text-xs uppercase tracking-tighter text-text-tertiary">02 — about</p>
         </section>
