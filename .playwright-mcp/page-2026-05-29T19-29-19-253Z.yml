@@ -1,0 +1,31 @@
+- generic [ref=e2]:
+  - img "Trading platform interface illustration for Prime Global FX" [ref=e4]
+  - generic [ref=e5]:
+    - combobox [ref=e7]:
+      - option "Español" [selected]
+      - option "English"
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - img "Logo" [ref=e10]
+        - generic [ref=e11]:
+          - heading "Bienvenido a Prime Global FX" [level=1] [ref=e12]
+          - paragraph [ref=e13]: Por favor, inicia sesión en tu cuenta y comienza la aventura
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]: Correo electrónico o nombre de usuario
+          - textbox "Correo electrónico o nombre de usuario" [active] [ref=e17]:
+            - /placeholder: Correo electrónico
+        - generic [ref=e18]:
+          - generic [ref=e19]:
+            - generic [ref=e20]: Contraseña
+            - link "¿Olvidaste tu contraseña?" [ref=e21] [cursor=pointer]:
+              - /url: https://backfxprimeglobal.net/forgot-password
+          - generic [ref=e23]:
+            - textbox "Contraseña" [ref=e24]
+            - button "Show Password" [ref=e25] [cursor=pointer]:
+              - img [ref=e26]
+        - generic [ref=e30]:
+          - checkbox "Recuérdame" [ref=e31]
+          - generic [ref=e32]: Recuérdame
+        - button "Iniciar sesión" [ref=e34] [cursor=pointer]:
+          - generic [ref=e35]: Iniciar sesión

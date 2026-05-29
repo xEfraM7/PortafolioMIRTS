@@ -1,0 +1,25 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - img "Madbox" [ref=e6]
+      - generic [ref=e7]:
+        - generic [ref=e8]: Madbox
+        - generic [ref=e9]: Panel de administración del gimnasio
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Correo electrónico
+        - textbox "Correo electrónico" [ref=e14]:
+          - /placeholder: admin@gimnasio.com
+      - generic [ref=e15]:
+        - generic [ref=e16]: Contraseña
+        - generic [ref=e17]:
+          - textbox "Contraseña" [ref=e18]:
+            - /placeholder: ••••••••
+          - button "Mostrar contraseña" [ref=e19]:
+            - img [ref=e20]
+      - button "Iniciar sesión" [ref=e23]
+      - paragraph [ref=e24]:
+        - text: ¿Olvidaste tu contraseña?
+        - link "Recuperar acceso" [ref=e25] [cursor=pointer]:
+          - /url: /forgot-password
+  - alert [ref=e26]

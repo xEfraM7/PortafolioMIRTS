@@ -1,0 +1,372 @@
+- generic [active] [ref=e1]:
+  - region "Notifications alt+T"
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]:
+          - img "Perfect Book" [ref=e6]
+          - generic [ref=e7]: Perfect Book
+        - generic [ref=e8]:
+          - link "Categorías" [ref=e9] [cursor=pointer]:
+            - /url: "#categorias"
+            - text: Categorías
+          - link "Roles" [ref=e10] [cursor=pointer]:
+            - /url: "#roles"
+            - text: Roles
+          - link "Características" [ref=e11] [cursor=pointer]:
+            - /url: "#features"
+            - text: Características
+          - link "Precios" [ref=e12] [cursor=pointer]:
+            - /url: "#precios"
+            - text: Precios
+          - link "Comenzar" [ref=e13] [cursor=pointer]:
+            - /url: "#precios"
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e19]:
+          - img [ref=e21]
+          - generic [ref=e23]: Plataforma premium para profesionales de belleza
+        - heading "Eleva tu arte al siguiente nivel digital." [level=1] [ref=e24]:
+          - text: Eleva tu arte
+          - text: al siguiente nivel
+          - text: digital.
+        - paragraph [ref=e25]: Plataforma premium multi-rol para reservas de barbería y belleza. Conecta clientes, profesionales independientes y dueños de locales en una sola app.
+        - generic [ref=e26]:
+          - link "Ver características" [ref=e27] [cursor=pointer]:
+            - /url: "#features"
+            - text: Ver características
+            - img [ref=e29]
+          - link "Ver planes" [ref=e31] [cursor=pointer]:
+            - /url: "#precios"
+        - generic [ref=e32]:
+          - link "Descarga en App Store" [ref=e33] [cursor=pointer]:
+            - /url: https://apps.apple.com/us/app/team-perfect-booking/id6761851495
+            - img [ref=e34]
+            - generic [ref=e36]:
+              - paragraph [ref=e37]: Descarga en
+              - paragraph [ref=e38]: App Store
+          - button "Próximamente en Google Play" [disabled] [ref=e39]:
+            - img [ref=e40]
+            - generic [ref=e42]:
+              - paragraph [ref=e43]: Próximamente en
+              - paragraph [ref=e44]: Google Play
+        - generic [ref=e45]:
+          - generic [ref=e46]: ✓ Clientes gratis siempre
+          - generic [ref=e47]: ✓ USD y VES
+          - generic [ref=e48]: ✓ iOS disponible
+      - img "Perfect Book — Pantalla principal de la app con agenda de citas" [ref=e62]
+    - generic [ref=e66]:
+      - generic [ref=e67]:
+        - paragraph [ref=e68]: Categorías
+        - heading "Todo tipo de profesional" [level=2] [ref=e69]
+        - paragraph [ref=e70]: Una plataforma adaptada a cada especialidad del mundo de la belleza.
+      - generic [ref=e71]:
+        - generic [ref=e73] [cursor=pointer]:
+          - img [ref=e76]
+          - heading "Barbería" [level=3] [ref=e82]
+          - paragraph [ref=e83]: Cortes, afeitados y estilos modernos
+        - generic [ref=e85] [cursor=pointer]:
+          - img [ref=e88]
+          - heading "Manicura" [level=3] [ref=e90]
+          - paragraph [ref=e91]: Diseños únicos y cuidado profesional
+        - generic [ref=e93] [cursor=pointer]:
+          - img [ref=e96]
+          - heading "Pestañas" [level=3] [ref=e99]
+          - paragraph [ref=e100]: Extensiones y lifting de pestañas
+        - generic [ref=e102] [cursor=pointer]:
+          - img [ref=e105]
+          - heading "Estética" [level=3] [ref=e107]
+          - paragraph [ref=e108]: Tratamientos faciales y corporales
+    - generic [ref=e110]:
+      - generic [ref=e111]:
+        - paragraph [ref=e112]: Roles
+        - heading "Una app, tres experiencias" [level=2] [ref=e113]
+        - paragraph [ref=e114]: Cada rol tiene su propio panel con las herramientas exactas que necesita.
+      - generic [ref=e115]:
+        - generic [ref=e117]:
+          - generic [ref=e118]:
+            - generic [ref=e119]:
+              - heading "Cliente" [level=3] [ref=e120]
+              - generic [ref=e121]: Gratis
+            - paragraph [ref=e122]: Reserva en segundos
+            - paragraph [ref=e123]: Encuentra los mejores profesionales cerca de ti, reserva tu cita en 3 pasos y paga directo desde la app.
+            - list [ref=e124]:
+              - listitem [ref=e125]:
+                - img [ref=e126]
+                - text: Explorar barberos y locales
+              - listitem [ref=e128]:
+                - img [ref=e129]
+                - text: Reservar cita en 3 pasos
+              - listitem [ref=e131]:
+                - img [ref=e132]
+                - text: Historial de citas con filtros
+              - listitem [ref=e134]:
+                - img [ref=e135]
+                - text: Dejar reseñas y calificaciones
+              - listitem [ref=e137]:
+                - img [ref=e138]
+                - text: Wallet digital (USD + VES)
+              - listitem [ref=e140]:
+                - img [ref=e141]
+                - text: Métodos de pago guardados
+              - listitem [ref=e143]:
+                - img [ref=e144]
+                - text: Notificaciones y recordatorios
+          - img "Perfect Book — Pantalla del rol Cliente" [ref=e150]
+        - generic [ref=e152]:
+          - generic [ref=e153]:
+            - generic [ref=e154]:
+              - heading "Profesional" [level=3] [ref=e155]
+              - generic [ref=e156]: $15.99/mes
+            - paragraph [ref=e157]: Gestiona tu agenda
+            - paragraph [ref=e158]: Tu negocio en el bolsillo. Administra citas, servicios y ganancias desde donde estés.
+            - list [ref=e159]:
+              - listitem [ref=e160]:
+                - img [ref=e161]
+                - text: Dashboard con agenda y calendario
+              - listitem [ref=e163]:
+                - img [ref=e164]
+                - text: Gestión de servicios y precios
+              - listitem [ref=e166]:
+                - img [ref=e167]
+                - text: Lista de clientes e invitaciones
+              - listitem [ref=e169]:
+                - img [ref=e170]
+                - text: Reseñas recibidas
+              - listitem [ref=e172]:
+                - img [ref=e173]
+                - text: Reporte de ventas y ganancias
+              - listitem [ref=e175]:
+                - img [ref=e176]
+                - text: Wallet con historial de retiros
+              - listitem [ref=e178]:
+                - img [ref=e179]
+                - text: Métodos de pago USD y VES
+          - img "Perfect Book — Pantalla del rol Profesional" [ref=e185]
+        - generic [ref=e187]:
+          - generic [ref=e188]:
+            - generic [ref=e189]:
+              - heading "Dueño de Local" [level=3] [ref=e190]
+              - generic [ref=e191]: Desde $49.99/mes
+            - paragraph [ref=e192]: Controla tu negocio
+            - paragraph [ref=e193]: Gestiona tu equipo, múltiples locales y reportes financieros desde un panel unificado.
+            - list [ref=e194]:
+              - listitem [ref=e195]:
+                - img [ref=e196]
+                - text: Gestión de locales (1 o múltiples)
+              - listitem [ref=e198]:
+                - img [ref=e199]
+                - text: Gestión de equipo e invitaciones
+              - listitem [ref=e201]:
+                - img [ref=e202]
+                - text: Citas de todo el equipo
+              - listitem [ref=e204]:
+                - img [ref=e205]
+                - text: Reportes financieros detallados
+              - listitem [ref=e207]:
+                - img [ref=e208]
+                - text: Wallet y métodos de retiro
+              - listitem [ref=e210]:
+                - img [ref=e211]
+                - text: Panel de control unificado
+              - listitem [ref=e213]:
+                - img [ref=e214]
+                - text: Métricas por profesional
+          - img "Perfect Book — Pantalla del rol Dueño de Local" [ref=e220]
+    - generic [ref=e223]:
+      - generic [ref=e224]:
+        - paragraph [ref=e225]: Características Pro
+        - heading "Herramientas que potencian tu negocio" [level=2] [ref=e226]
+        - paragraph [ref=e227]: Todo lo que necesitas en una sola app. Sin complicaciones.
+      - generic [ref=e228]:
+        - generic [ref=e230]:
+          - img [ref=e233]
+          - generic [ref=e235]:
+            - heading "Agenda inteligente" [level=3] [ref=e236]
+            - paragraph [ref=e237]: Gestión en tiempo real
+          - paragraph [ref=e238]: Sincroniza citas, evita conflictos y envía recordatorios automáticos a tus clientes desde cualquier dispositivo.
+          - generic [ref=e239]: Sincronización en la nube
+        - generic [ref=e241]:
+          - img [ref=e244]
+          - generic [ref=e246]:
+            - heading "Pagos USD y VES" [level=3] [ref=e247]
+            - paragraph [ref=e248]: Stripe + Pago Móvil / C2P
+          - paragraph [ref=e249]: Acepta pagos en dólares via Stripe y en bolívares via Pago Móvil y C2P. Tasa de cambio en tiempo real integrada.
+          - generic [ref=e250]: Multi-divisa
+        - generic [ref=e252]:
+          - img [ref=e255]
+          - generic [ref=e258]:
+            - heading "Wallet digital" [level=3] [ref=e259]
+            - paragraph [ref=e260]: Balance unificado por rol
+          - paragraph [ref=e261]: Cada rol tiene su propio wallet con historial de transacciones, métodos de retiro y saldo disponible al instante.
+          - generic [ref=e262]: USD + VES
+        - generic [ref=e264]:
+          - img [ref=e267]
+          - generic [ref=e269]:
+            - heading "Finanzas claras" [level=3] [ref=e270]
+            - paragraph [ref=e271]: Reportes de ingresos automáticos
+          - paragraph [ref=e272]: Visualiza tus ganancias diarias, semanales y mensuales. Exporta reportes y toma decisiones con datos reales.
+          - generic [ref=e273]: Exporta a Excel / PDF
+        - generic [ref=e275]:
+          - img [ref=e278]
+          - generic [ref=e280]:
+            - heading "Reseñas y reputación" [level=3] [ref=e281]
+            - paragraph [ref=e282]: Sistema de calificaciones
+          - paragraph [ref=e283]: Clientes califican y reseñan tras cada cita. Construye tu reputación y destaca entre los mejores de tu zona.
+          - generic [ref=e284]: Sistema verificado
+        - generic [ref=e286]:
+          - img [ref=e289]
+          - generic [ref=e294]:
+            - heading "Plataforma multi-rol" [level=3] [ref=e295]
+            - paragraph [ref=e296]: Cliente • Profesional • Dueño
+          - paragraph [ref=e297]: Una sola app, tres experiencias distintas. Cada rol accede a las herramientas exactas que necesita, sin ruido.
+          - generic [ref=e298]: 3 roles integrados
+    - generic [ref=e301]:
+      - generic [ref=e302]:
+        - paragraph [ref=e303]: Precios
+        - heading "Planes para cada etapa" [level=2] [ref=e304]
+        - paragraph [ref=e305]: Sin contratos. Cancela cuando quieras.
+        - generic [ref=e308]: Los clientes siempre son bienvenidos de forma completamente gratuita.
+      - generic [ref=e309]:
+        - generic [ref=e310]:
+          - generic [ref=e311]:
+            - heading "Profesional" [level=3] [ref=e312]
+            - paragraph [ref=e313]: Para barberos y profesionales independientes
+          - generic [ref=e314]:
+            - generic [ref=e315]: $15.99
+            - generic [ref=e316]: /mes
+          - list [ref=e317]:
+            - listitem [ref=e318]:
+              - img [ref=e319]
+              - text: Citas ilimitadas
+            - listitem [ref=e321]:
+              - img [ref=e322]
+              - text: Dashboard con calendario
+            - listitem [ref=e324]:
+              - img [ref=e325]
+              - text: Gestión de servicios y precios
+            - listitem [ref=e327]:
+              - img [ref=e328]
+              - text: Wallet digital (USD + VES)
+            - listitem [ref=e330]:
+              - img [ref=e331]
+              - text: Pagos Stripe + Pago Móvil / C2P
+            - listitem [ref=e333]:
+              - img [ref=e334]
+              - text: Reseñas y calificaciones
+            - listitem [ref=e336]:
+              - img [ref=e337]
+              - text: Reportes de ganancias
+            - listitem [ref=e339]:
+              - img [ref=e340]
+              - text: Soporte por email
+        - generic [ref=e342]:
+          - generic [ref=e343]: Más popular
+          - generic [ref=e344]:
+            - heading "Negocio" [level=3] [ref=e345]
+            - paragraph [ref=e346]: Para dueños con un solo local
+          - generic [ref=e347]:
+            - generic [ref=e348]: $49.99
+            - generic [ref=e349]: /mes
+          - list [ref=e350]:
+            - listitem [ref=e351]:
+              - img [ref=e352]
+              - text: Todo lo del plan Profesional
+            - listitem [ref=e354]:
+              - img [ref=e355]
+              - text: 1 local registrado
+            - listitem [ref=e357]:
+              - img [ref=e358]
+              - text: Gestión de equipo completo
+            - listitem [ref=e360]:
+              - img [ref=e361]
+              - text: Citas de todos los profesionales
+            - listitem [ref=e363]:
+              - img [ref=e364]
+              - text: Reportes financieros del local
+            - listitem [ref=e366]:
+              - img [ref=e367]
+              - text: Panel de control unificado
+            - listitem [ref=e369]:
+              - img [ref=e370]
+              - text: Métricas por profesional
+            - listitem [ref=e372]:
+              - img [ref=e373]
+              - text: Soporte prioritario
+        - generic [ref=e375]:
+          - generic [ref=e376]:
+            - heading "Multi-Local" [level=3] [ref=e377]
+            - paragraph [ref=e378]: Para cadenas y franquicias
+          - generic [ref=e379]:
+            - generic [ref=e380]: $90.99
+            - generic [ref=e381]: /mes
+          - list [ref=e382]:
+            - listitem [ref=e383]:
+              - img [ref=e384]
+              - text: Todo lo del plan Negocio
+            - listitem [ref=e386]:
+              - img [ref=e387]
+              - text: Locales ilimitados
+            - listitem [ref=e389]:
+              - img [ref=e390]
+              - text: Gestión centralizada multi-sucursal
+            - listitem [ref=e392]:
+              - img [ref=e393]
+              - text: Reportes financieros consolidados
+            - listitem [ref=e395]:
+              - img [ref=e396]
+              - text: Equipos por local independientes
+            - listitem [ref=e398]:
+              - img [ref=e399]
+              - text: Métricas comparativas entre locales
+            - listitem [ref=e401]:
+              - img [ref=e402]
+              - text: Acceso anticipado a nuevas funciones
+            - listitem [ref=e404]:
+              - img [ref=e405]
+              - text: Gerente de cuenta dedicado
+    - contentinfo [ref=e407]:
+      - generic [ref=e408]:
+        - generic [ref=e409]:
+          - generic [ref=e410]:
+            - generic [ref=e411]:
+              - img "Perfect Book" [ref=e412]
+              - generic [ref=e413]: Perfect Book
+            - paragraph [ref=e414]: Eleva tu arte al siguiente nivel digital.
+            - link "perfectbarberapp@gmail.com" [ref=e415] [cursor=pointer]:
+              - /url: mailto:perfectbarberapp@gmail.com
+              - text: perfectbarberapp@gmail.com
+          - generic [ref=e416]:
+            - link "Categorías" [ref=e417] [cursor=pointer]:
+              - /url: "#categorias"
+              - text: Categorías
+            - link "Roles" [ref=e418] [cursor=pointer]:
+              - /url: "#roles"
+              - text: Roles
+            - link "Características" [ref=e419] [cursor=pointer]:
+              - /url: "#features"
+              - text: Características
+            - link "Precios" [ref=e420] [cursor=pointer]:
+              - /url: "#precios"
+              - text: Precios
+          - generic [ref=e421]:
+            - button "Instagram" [disabled] [ref=e422]:
+              - img [ref=e423]
+            - button "TikTok" [disabled] [ref=e425]:
+              - img [ref=e426]
+            - button "X / Twitter" [disabled] [ref=e428]:
+              - img [ref=e429]
+            - button "Facebook" [disabled] [ref=e431]:
+              - img [ref=e432]
+        - generic [ref=e435]:
+          - paragraph [ref=e436]: © 2026 Perfect Book. Todos los derechos reservados.
+          - generic [ref=e437]:
+            - link "Privacidad" [ref=e438] [cursor=pointer]:
+              - /url: "#"
+              - text: Privacidad
+            - link "Términos" [ref=e439] [cursor=pointer]:
+              - /url: "#"
+              - text: Términos
+            - link "Contacto" [ref=e440] [cursor=pointer]:
+              - /url: mailto:perfectbarberapp@gmail.com
+              - text: Contacto

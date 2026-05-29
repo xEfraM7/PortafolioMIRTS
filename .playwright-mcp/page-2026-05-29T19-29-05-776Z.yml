@@ -1,0 +1,320 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "BioCure Health" [ref=e5] [cursor=pointer]:
+        - /url: "#"
+        - img "BioCure Health" [ref=e6]
+      - generic [ref=e7]:
+        - link "How It Works" [ref=e8] [cursor=pointer]:
+          - /url: "#how-it-works"
+        - link "Results" [ref=e9] [cursor=pointer]:
+          - /url: "#testimonials"
+        - link "Pricing" [ref=e10] [cursor=pointer]:
+          - /url: "#pricing"
+        - link "FAQ" [ref=e11] [cursor=pointer]:
+          - /url: "#faq"
+      - button "Schedule Your Free 15-Min Intro Call" [ref=e13] [cursor=pointer]
+  - main [ref=e14]:
+    - generic [ref=e17]:
+      - paragraph [ref=e19]: Finally understand why the gym isn't working
+      - heading "Training Hard But Looking Soft? It's Not Your Fault." [level=1] [ref=e20]:
+        - text: Training Hard But Looking Soft?
+        - text: It's Not Your Fault.
+      - paragraph [ref=e22]: Most guys under 30 assume their testosterone is fine because they're "young." That's like assuming your car runs great just because it's new—without ever checking the oil. One blood test reveals whether biology is working for you or against you.
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - button "Schedule Your Free 15-Min Intro Call" [ref=e26] [cursor=pointer]
+          - paragraph [ref=e28]: Takes 2 minutes. Speak with a physician this week.
+        - 'button "Watch: What Our Physicians Want You to Know" [ref=e30] [cursor=pointer]':
+          - img
+          - generic [ref=e31]: "Watch: What Our Physicians Want You to Know"
+    - generic [ref=e37]:
+      - button "Reproducir video" [ref=e39] [cursor=pointer]:
+        - img "Watch how we're helping men reclaim their energy, focus, and vitality" [ref=e40]
+        - img [ref=e44]
+        - generic [ref=e46]: 3:45
+      - paragraph [ref=e47]: Watch how we're helping men reclaim their energy, focus, and vitality
+    - generic [ref=e49]:
+      - heading "What Happens When Your Hormones Are Optimized" [level=2] [ref=e51]
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - img [ref=e55]
+          - heading "Build Muscle That Actually Shows" [level=3] [ref=e61]
+          - paragraph [ref=e62]: Stop spinning your wheels. When your T is optimized, the same workout gives you 2-3x the results.
+        - generic [ref=e63]:
+          - img [ref=e65]
+          - heading "Energy Without the Crash" [level=3] [ref=e67]
+          - paragraph [ref=e68]: No more 3pm slump. Wake up ready to go and stay sharp until you decide to sleep—not when your body forces you.
+        - generic [ref=e69]:
+          - img [ref=e71]
+          - heading "Lose the \"Skinny Fat\" Look" [level=3] [ref=e73]
+          - paragraph [ref=e74]: Finally see definition. Optimized hormones torch stubborn belly fat while preserving muscle—no starvation required.
+    - generic [ref=e76]:
+      - heading "Is This You?" [level=2] [ref=e78]
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - img [ref=e82]
+          - generic [ref=e88]:
+            - heading "The Frustrated Gym-Goer" [level=3] [ref=e89]
+            - paragraph [ref=e90]: You're in the gym 4-5 days a week. You eat right. You do everything the influencers say. But you still look the same as the guy who plays video games and eats pizza. You're starting to wonder if something is actually wrong with you.
+        - generic [ref=e91]:
+          - img [ref=e93]
+          - generic [ref=e95]:
+            - heading "The Always-Tired Achiever" [level=3] [ref=e96]
+            - paragraph [ref=e97]: You're 24 but you feel 44. Coffee gets you to 10am. By 3pm you're running on fumes. Your friends are out living their lives while you're calculating how many hours until you can crash on the couch.
+        - generic [ref=e98]:
+          - img [ref=e100]
+          - generic [ref=e104]:
+            - heading "The Ambitious One Who's Falling Behind" [level=3] [ref=e105]
+            - paragraph [ref=e106]: You've got goals—career, physique, relationships. But lately the drive isn't there. The guys around you seem to have an edge you don't. You're putting in the work but not getting the same returns.
+        - generic [ref=e107]:
+          - img [ref=e109]
+          - generic [ref=e119]:
+            - heading "The Foggy Thinker" [level=3] [ref=e120]
+            - paragraph [ref=e121]: Your brain used to be sharp. Now you're forgetting things, losing focus mid-conversation, struggling to concentrate. You're too young to feel this mentally slow—but here you are.
+    - generic [ref=e123]:
+      - heading "Everything You Get With BioCure" [level=2] [ref=e125]
+      - generic [ref=e126]:
+        - generic [ref=e128]:
+          - img [ref=e130]
+          - generic [ref=e132]:
+            - heading "Comprehensive Hormone Panel" [level=3] [ref=e133]
+            - paragraph [ref=e134]: Not just total T. We test bioavailable testosterone, SHBG, estradiol, and 8 other markers most clinics ignore.
+        - generic [ref=e136]:
+          - img [ref=e138]
+          - generic [ref=e142]:
+            - heading "Board-Certified Physician Review" [level=3] [ref=e143]
+            - paragraph [ref=e144]: A real doctor (not an algorithm) analyzes your results and builds your protocol.
+        - generic [ref=e146]:
+          - img [ref=e148]
+          - generic [ref=e151]:
+            - heading "Personalized Treatment Plan" [level=3] [ref=e152]
+            - paragraph [ref=e153]: Cookie-cutter doesn't work. Your protocol is designed for YOUR biology and goals.
+        - generic [ref=e155]:
+          - img [ref=e157]
+          - generic [ref=e161]:
+            - heading "Medication Delivered to Your Door" [level=3] [ref=e162]
+            - paragraph [ref=e163]: Pharmacy-grade. Discreet packaging. No awkward pickup conversations.
+        - generic [ref=e165]:
+          - img [ref=e167]
+          - generic [ref=e169]:
+            - heading "Ongoing Physician Access" [level=3] [ref=e170]
+            - paragraph [ref=e171]: Questions at 10pm? Message your care team anytime. No appointment needed.
+        - generic [ref=e173]:
+          - img [ref=e175]
+          - generic [ref=e177]:
+            - heading "Quarterly Optimization Labs" [level=3] [ref=e178]
+            - paragraph [ref=e179]: We don't guess. We test every 90 days and adjust your protocol for continuous improvement.
+    - generic [ref=e181]:
+      - generic [ref=e182]:
+        - heading "Real Results From Real Patients" [level=2] [ref=e183]
+        - generic [ref=e184]:
+          - generic [ref=e185]:
+            - img [ref=e186]
+            - img [ref=e188]
+            - img [ref=e190]
+            - img [ref=e192]
+            - img [ref=e194]
+          - generic [ref=e196]: 5.0 on Google Reviews
+      - generic [ref=e197]:
+        - generic [ref=e198]:
+          - generic [ref=e199]:
+            - img [ref=e200]
+            - img [ref=e202]
+            - img [ref=e204]
+            - img [ref=e206]
+            - img [ref=e208]
+          - paragraph [ref=e210]: "\"Ever since my first contact with BioCure Health through Dr Rosado, I could not have had a better experience. The sense of being understood and the feeling that your problem is the only one in the world is crucial. Knowing that there is always somebody ready to respond to your questions is extremely important when you need an answer on the moment. I could not be more satisfied with my experience.\""
+          - generic [ref=e211]:
+            - generic [ref=e213]: L
+            - generic [ref=e214]:
+              - paragraph [ref=e215]: Luisa Belo
+              - paragraph [ref=e216]: Verified Patient
+        - generic [ref=e217]:
+          - generic [ref=e218]:
+            - img [ref=e219]
+            - img [ref=e221]
+            - img [ref=e223]
+            - img [ref=e225]
+            - img [ref=e227]
+          - paragraph [ref=e229]: "\"I have been a patient at Biocure for the past 3 years and I can confidently say that they are simply phenomenal. From the moment I walked into their office, I was greeted with warmth and genuine care. Dr. Rosado and Dr. Chaple take the time to understand each patient's unique needs and tailor their treatment accordingly.\""
+          - generic [ref=e230]:
+            - generic [ref=e232]: J
+            - generic [ref=e233]:
+              - paragraph [ref=e234]: Jeanfranco Ciaramella
+              - paragraph [ref=e235]: Verified Patient
+        - generic [ref=e236]:
+          - generic [ref=e237]:
+            - img [ref=e238]
+            - img [ref=e240]
+            - img [ref=e242]
+            - img [ref=e244]
+            - img [ref=e246]
+          - paragraph [ref=e248]: "\"I am so thankful to the BioCure team for the amazing improvement in my health and my lifestyle. In a little over a month I am already losing weight and feeling much better and healthier. Dr. Rosado and Claudia always follow up with me regarding my treatment plan to make sure I am meeting my goals. I highly recommend their services.\""
+          - generic [ref=e249]:
+            - generic [ref=e251]: S
+            - generic [ref=e252]:
+              - paragraph [ref=e253]: Sonny Leon
+              - paragraph [ref=e254]: Verified Patient
+        - generic [ref=e255]:
+          - generic [ref=e256]:
+            - img [ref=e257]
+            - img [ref=e259]
+            - img [ref=e261]
+            - img [ref=e263]
+            - img [ref=e265]
+          - paragraph [ref=e267]: "\"BioCure is a key component to maintaining my healthy lifestyle. As a fitness professional, I am very selective who I choose to be part of my inner circle. They are more than simply health practitioners, they are family.\""
+          - generic [ref=e268]:
+            - generic [ref=e270]: L
+            - generic [ref=e271]:
+              - paragraph [ref=e272]: Lawrence Serrahn
+              - paragraph [ref=e273]: Verified Patient
+        - generic [ref=e274]:
+          - generic [ref=e275]:
+            - img [ref=e276]
+            - img [ref=e278]
+            - img [ref=e280]
+            - img [ref=e282]
+            - img [ref=e284]
+          - paragraph [ref=e286]: "\"Dr. Rosado and his wonderful team has made this journey very easy for me. Though I am still in the beginning stage, they have been so helpful and timely in getting back to me and answering all my questions and feeling at ease. Thank you and looking forward to working towards feeling my best!\""
+          - generic [ref=e287]:
+            - generic [ref=e289]: A
+            - generic [ref=e290]:
+              - paragraph [ref=e291]: Annmarie Bruzzo
+              - paragraph [ref=e292]: Verified Patient
+        - generic [ref=e293]:
+          - generic [ref=e294]:
+            - img [ref=e295]
+            - img [ref=e297]
+            - img [ref=e299]
+            - img [ref=e301]
+            - img [ref=e303]
+          - paragraph [ref=e305]: "\"Dr. Chaple and Dr. Rosado are not only excellent Practitioners, but wonderful individuals as well. They go above and beyond for their patients, making sure they are well informed and treated with top level care. I always leave the clinic feeling my best both physically and emotionally. I highly recommend their services.\""
+          - generic [ref=e306]:
+            - generic [ref=e308]: D
+            - generic [ref=e309]:
+              - paragraph [ref=e310]: Denise Suarez
+              - paragraph [ref=e311]: Verified Patient
+    - generic [ref=e313]:
+      - heading "Get Started in 3 Simple Steps" [level=2] [ref=e315]
+      - generic [ref=e316]:
+        - generic [ref=e318]:
+          - img [ref=e320]
+          - paragraph [ref=e324]: Step 1
+          - heading "Schedule Your Free 15-Min Intro Call" [level=3] [ref=e325]
+          - paragraph [ref=e326]: 2-minute quiz about your symptoms, goals, and lifestyle. No credit card required.
+        - generic [ref=e327]:
+          - img [ref=e329]
+          - paragraph [ref=e331]: Step 2
+          - heading "Get Your Labs Done" [level=3] [ref=e332]
+          - paragraph [ref=e333]: We send you a lab order. Walk into any Quest or Labcorp near you. In and out in 10 minutes.
+        - generic [ref=e334]:
+          - img [ref=e336]
+          - paragraph [ref=e341]: Step 3
+          - heading "Start Your Protocol" [level=3] [ref=e342]
+          - paragraph [ref=e343]: Meet with your physician. Get your personalized plan. Medication ships to your door within days.
+    - generic [ref=e345]:
+      - heading "Transparent Pricing. No Hidden Fees." [level=2] [ref=e347]
+      - generic [ref=e349]:
+        - paragraph [ref=e351]: Consultation + Labs + Meds
+        - button "Get Started Now" [ref=e352] [cursor=pointer]
+        - list [ref=e353]:
+          - listitem [ref=e354]:
+            - img [ref=e355]
+            - generic [ref=e357]: Consultation with board-certified physician
+          - listitem [ref=e358]:
+            - img [ref=e359]
+            - generic [ref=e361]: Comprehensive hormone panel labs
+          - listitem [ref=e362]:
+            - img [ref=e363]
+            - generic [ref=e365]: Personalized treatment plan
+          - listitem [ref=e366]:
+            - img [ref=e367]
+            - generic [ref=e369]: Medication delivered to your door
+          - listitem [ref=e370]:
+            - img [ref=e371]
+            - generic [ref=e373]: Ongoing physician access
+    - generic [ref=e375]:
+      - heading "Questions? We've Got Answers." [level=2] [ref=e377]
+      - generic [ref=e379]:
+        - heading "I'm under 30—isn't testosterone therapy for older guys?" [level=3] [ref=e381]:
+          - button "I'm under 30—isn't testosterone therapy for older guys?" [ref=e382] [cursor=pointer]:
+            - text: I'm under 30—isn't testosterone therapy for older guys?
+            - img [ref=e383]
+        - heading "Is this safe? Will it affect my fertility?" [level=3] [ref=e386]:
+          - button "Is this safe? Will it affect my fertility?" [ref=e387] [cursor=pointer]:
+            - text: Is this safe? Will it affect my fertility?
+            - img [ref=e388]
+        - heading "How is this different from steroids?" [level=3] [ref=e391]:
+          - button "How is this different from steroids?" [ref=e392] [cursor=pointer]:
+            - text: How is this different from steroids?
+            - img [ref=e393]
+        - heading "How fast will I see results?" [level=3] [ref=e396]:
+          - button "How fast will I see results?" [ref=e397] [cursor=pointer]:
+            - text: How fast will I see results?
+            - img [ref=e398]
+        - heading "What if my levels come back normal?" [level=3] [ref=e401]:
+          - button "What if my levels come back normal?" [ref=e402] [cursor=pointer]:
+            - text: What if my levels come back normal?
+            - img [ref=e403]
+    - generic [ref=e407]:
+      - heading "Stop Guessing. Start Knowing." [level=2] [ref=e408]
+      - paragraph [ref=e409]: You've read this far because something isn't working. You're putting in the effort but not getting the results. One test can tell you if biology is the problem. If it is, we fix it. If it's not, you'll know—and you can rule it out for good.
+      - button "Schedule Your Free 15-Min Intro Call" [ref=e410] [cursor=pointer]
+      - generic [ref=e411]:
+        - img [ref=e412]
+        - generic [ref=e417]: Join 10,000+ men who stopped guessing and started optimizing.
+      - generic [ref=e418]:
+        - img [ref=e419]
+        - text: Limited spots available for new patients this month.
+    - generic [ref=e423]:
+      - generic [ref=e424]:
+        - generic [ref=e425]:
+          - img [ref=e426]
+          - generic [ref=e430]: Board-Certified Physicians
+        - generic [ref=e431]:
+          - img [ref=e432]
+          - generic [ref=e436]: FDA-Approved Pharmacies
+      - generic [ref=e437]:
+        - generic [ref=e438]:
+          - img "BioCure Health" [ref=e439]
+          - paragraph [ref=e440]: BioCure provides telehealth services for hormone optimization. Individual results vary.
+        - generic [ref=e441]:
+          - heading "Legal" [level=3] [ref=e442]
+          - list [ref=e443]:
+            - listitem [ref=e444]:
+              - button "Privacy Policy" [ref=e445] [cursor=pointer]
+        - generic [ref=e446]:
+          - heading "Menu" [level=3] [ref=e447]
+          - list [ref=e448]:
+            - listitem [ref=e449]:
+              - link "How It Works" [ref=e450] [cursor=pointer]:
+                - /url: "#how-it-works"
+            - listitem [ref=e451]:
+              - link "Results" [ref=e452] [cursor=pointer]:
+                - /url: "#benefits"
+            - listitem [ref=e453]:
+              - link "Pricing" [ref=e454] [cursor=pointer]:
+                - /url: "#pricing"
+            - listitem [ref=e455]:
+              - link "FAQ" [ref=e456] [cursor=pointer]:
+                - /url: "#faq"
+        - generic [ref=e457]:
+          - heading "Connect" [level=3] [ref=e458]
+          - paragraph [ref=e459]: support@getbiocure.com
+          - generic [ref=e460]:
+            - link "Instagram" [ref=e461] [cursor=pointer]:
+              - /url: https://www.instagram.com/getbiocure/?hl=en
+              - img [ref=e462]
+            - link "TikTok" [ref=e465] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@getbiocure
+              - img [ref=e466]
+            - link "YouTube" [ref=e468] [cursor=pointer]:
+              - /url: https://www.youtube.com/@biocurehealth
+              - img [ref=e469]
+      - generic [ref=e472]:
+        - paragraph [ref=e473]: © 2026 BioCure Health. All rights reserved.
+        - paragraph [ref=e474]: Consult with your physician before starting any treatment.
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"

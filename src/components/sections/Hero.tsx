@@ -25,7 +25,7 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative isolate overflow-hidden pt-32 pb-section-y-sm sm:pt-40"
+      className="relative isolate flex min-h-[calc(100dvh-4rem)] flex-col overflow-hidden py-8 sm:py-12"
       aria-label="Intro"
     >
       <AuroraOrb />
@@ -33,63 +33,74 @@ export const Hero = () => {
         variants={stagger}
         initial="hidden"
         animate="visible"
-        className="container-hero relative flex flex-col items-start gap-8"
+        className="container-hero relative flex flex-1 flex-col"
       >
-        <motion.div variants={fadeUp}>
-          <StatusPill label={t("hero.status")} />
-        </motion.div>
+        <div className="flex flex-1 flex-col items-start justify-center gap-8">
+          <motion.div variants={fadeUp}>
+            <StatusPill label={t("hero.status")} />
+          </motion.div>
 
-        <motion.h1
-          variants={fadeUp}
-          className="max-w-[18ch] text-balance font-display text-5xl font-semibold leading-[1.02] tracking-tightest text-text-primary sm:text-6xl md:text-7xl lg:text-[88px]"
-        >
-          <span className="sr-only">{titles.join(" · ")}</span>
-          <span className="grid" aria-hidden="true">
-            {titles.map((label, i) => (
-              <span key={`reserve-${i}`} className="invisible col-start-1 row-start-1">
-                {label}
+          <motion.h1
+            variants={fadeUp}
+            className="max-w-[18ch] text-balance font-display text-5xl font-semibold leading-[1.02] tracking-tightest text-text-primary sm:text-6xl md:text-7xl lg:text-[88px]"
+          >
+            <span className="sr-only">{titles.join(" · ")}</span>
+            <span className="grid" aria-hidden="true">
+              {titles.map((label, i) => (
+                <span key={`reserve-${i}`} className="invisible col-start-1 row-start-1">
+                  {label}
+                </span>
+              ))}
+              <span className="col-start-1 row-start-1">
+                <AnimatePresence mode="wait" initial={false}>
+                  <motion.span
+                    key={index}
+                    initial={reduceMotion ? false : { opacity: 0, y: 16 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={reduceMotion ? { opacity: 0 } : { opacity: 0, y: -16 }}
+                    transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+                    className="block"
+                  >
+                    {titles[index]}
+                  </motion.span>
+                </AnimatePresence>
               </span>
-            ))}
-            <span className="col-start-1 row-start-1">
-              <AnimatePresence mode="wait" initial={false}>
-                <motion.span
-                  key={index}
-                  initial={reduceMotion ? false : { opacity: 0, y: 16 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={reduceMotion ? { opacity: 0 } : { opacity: 0, y: -16 }}
-                  transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                  className="block"
-                >
-                  {titles[index]}
-                </motion.span>
-              </AnimatePresence>
             </span>
-          </span>
-        </motion.h1>
+          </motion.h1>
 
-        <motion.p
+          <motion.p
+            variants={fadeUp}
+            className="max-w-[58ch] text-balance text-lg leading-relaxed text-text-secondary sm:text-xl"
+          >
+            {t("hero.subtitle")}
+          </motion.p>
+
+          <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-3">
+            <MagneticButton as="a" href="#work" variant="primary">
+              {t("hero.primaryCta")} <span aria-hidden="true">→</span>
+            </MagneticButton>
+            <MagneticButton as="a" href="#about" variant="secondary">
+              {t("hero.secondaryCta")}
+            </MagneticButton>
+          </motion.div>
+        </div>
+
+        <motion.a
           variants={fadeUp}
-          className="max-w-[58ch] text-balance text-lg leading-relaxed text-text-secondary sm:text-xl"
-        >
-          {t("hero.subtitle")}
-        </motion.p>
-
-        <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-3">
-          <MagneticButton as="a" href="#work" variant="primary">
-            {t("hero.primaryCta")} <span aria-hidden="true">→</span>
-          </MagneticButton>
-          <MagneticButton as="a" href="#about" variant="secondary">
-            {t("hero.secondaryCta")}
-          </MagneticButton>
-        </motion.div>
-
-        <motion.div
-          variants={fadeUp}
-          className="mt-12 flex items-center gap-3 font-mono text-[11px] uppercase tracking-tighter text-text-tertiary"
+          href="#about"
+          aria-label={t("hero.scrollCue")}
+          className="group mt-8 flex items-center gap-3 self-start font-mono text-[11px] uppercase tracking-tighter text-text-tertiary transition-colors hover:text-text-primary"
         >
           <span>{t("hero.scrollCue")}</span>
-          <span aria-hidden="true">↓</span>
-        </motion.div>
+          <motion.span
+            aria-hidden="true"
+            animate={reduceMotion ? undefined : { y: [0, 4, 0] }}
+            transition={reduceMotion ? undefined : { duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+            className="inline-block"
+          >
+            ↓
+          </motion.span>
+        </motion.a>
       </motion.div>
     </section>
   );

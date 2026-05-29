@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"D:/Proyectos/PortafolioMIRTS\" diff 3c1ee06..48f68b7)",
+      "Bash(git -C \"D:/Proyectos/PortafolioMIRTS\" log --oneline -5)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173/)"
+    ]
+  }
+}

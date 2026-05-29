@@ -1,0 +1,290 @@
+- generic [ref=e2]:
+  - link "Skip to content" [ref=e3] [cursor=pointer]:
+    - /url: "#hero"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Home" [ref=e6] [cursor=pointer]:
+        - /url: "#hero"
+        - img [ref=e7]
+        - generic [ref=e10]: efrain.cabrera
+      - generic [ref=e11]:
+        - group "Language" [ref=e12]:
+          - button "en" [pressed] [ref=e13] [cursor=pointer]
+          - button "es" [ref=e14] [cursor=pointer]
+        - button "Close menu" [expanded] [ref=e296] [cursor=pointer]:
+          - img [ref=e16]
+    - generic "Primary navigation" [ref=e297]:
+      - navigation "Primary" [ref=e298]:
+        - link "Work" [active] [ref=e299] [cursor=pointer]:
+          - /url: "#work"
+        - link "About" [ref=e300] [cursor=pointer]:
+          - /url: "#about"
+        - link "Experience" [ref=e301] [cursor=pointer]:
+          - /url: "#experience"
+        - link "Contact" [ref=e302] [cursor=pointer]:
+          - /url: "#contact"
+        - link "Let's talk" [ref=e303] [cursor=pointer]:
+          - /url: "#contact"
+  - main [ref=e17]:
+    - region "Intro" [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e25]: Available for new projects
+        - heading "Forward Deployed Engineer · Full-Stack AI Developer · Software Engineer" [level=1] [ref=e26]:
+          - generic [ref=e27]: Forward Deployed Engineer · Full-Stack AI Developer · Software Engineer
+          - generic [ref=e304]: Full-Stack AI Developer
+        - paragraph [ref=e31]: I build scalable, AI-first web and mobile products with React, Next.js, Laravel and React Native — focused on real impact in production.
+        - generic [ref=e32]:
+          - link "See selected work" [ref=e33] [cursor=pointer]:
+            - /url: "#work"
+            - text: See selected work
+            - generic [ref=e34]: →
+          - link "Read about me" [ref=e35] [cursor=pointer]:
+            - /url: "#about"
+        - generic [ref=e36]:
+          - generic [ref=e37]: scroll
+          - generic [ref=e38]: ↓
+    - region "About" [ref=e39]:
+      - generic [ref=e41]: 02/About
+      - generic [ref=e42]:
+        - generic [ref=e43]:
+          - paragraph [ref=e44]: Full-Stack developer with 5+ years building scalable, responsive web and mobile products. I work primarily with React, Next.js, Laravel, Nest.js and React Native.
+          - paragraph [ref=e45]: "I specialize in applied-AI products: from construction cost estimation with blueprint analysis (GPT-5) to voice AI for field use. I've shipped solutions for construction, hospitality, real estate and healthcare, leading frontend architecture and designing secure multi-tenant systems with Row-Level Security."
+          - paragraph [ref=e46]: I'm passionate about performance optimization, clean UI/UX, and working end-to-end with multidisciplinary teams. I'm currently exploring modern stacks like Bun + TanStack Start + Convex, always with an AI-first approach.
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - term [ref=e49]: 5+
+            - definition [ref=e50]: years of experience
+          - generic [ref=e51]:
+            - term [ref=e52]: −80%
+            - definition [ref=e53]: estimation time · SupplAI
+          - generic [ref=e54]:
+            - term [ref=e55]: +95%
+            - definition [ref=e56]: billing accuracy · Madbox
+    - region "Selected Work" [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e59]: 03/Selected Work
+        - generic [ref=e60]: 2023 / 2025
+      - generic [ref=e61]:
+        - article [ref=e62]:
+          - generic [ref=e63]:
+            - generic [ref=e64]:
+              - generic [ref=e65]:
+                - generic [ref=e66]: 01 / Featured
+                - generic [ref=e67]: 2024–2025
+              - generic [ref=e68]:
+                - heading "Supraca" [level=3] [ref=e69]
+                - paragraph [ref=e70]: "[TBD: Supraca problem EN — 1 sentence about the client pain]"
+                - paragraph [ref=e71]: "[TBD: Supraca solution EN — 1 sentence about what was built]"
+              - generic [ref=e72]:
+                - generic [ref=e73]:
+                  - term [ref=e74]: Role
+                  - definition [ref=e75]: Frontend lead
+                - generic [ref=e76]:
+                  - term [ref=e77]: Sector
+                  - definition [ref=e78]: Logistics
+                - generic [ref=e79]:
+                  - term [ref=e80]: Stack
+                  - definition [ref=e81]: Next.js · Node · PostgreSQL
+                - generic [ref=e82]:
+                  - term [ref=e83]: Outcome
+                  - definition [ref=e84]: "[TBD: Supraca outcome EN — 1 sentence with metric if known]"
+              - link "Visit live" [ref=e86] [cursor=pointer]:
+                - /url: https://supraca.vercel.app/dashboard
+                - text: Visit live
+                - img [ref=e87]
+            - img "Supraca — Logistics interface" [ref=e91]
+        - article [ref=e92]:
+          - generic [ref=e93]:
+            - generic [ref=e94]:
+              - generic [ref=e95]:
+                - generic [ref=e96]: 02 / Featured
+                - generic [ref=e97]: "2024"
+              - generic [ref=e98]:
+                - heading "Café Damasco" [level=3] [ref=e99]
+                - paragraph [ref=e100]: "[TBD: Damasco problem EN — 1 sentence]"
+                - paragraph [ref=e101]: "[TBD: Damasco solution EN — 1 sentence]"
+              - generic [ref=e102]:
+                - generic [ref=e103]:
+                  - term [ref=e104]: Role
+                  - definition [ref=e105]: Full development
+                - generic [ref=e106]:
+                  - term [ref=e107]: Sector
+                  - definition [ref=e108]: Hospitality
+                - generic [ref=e109]:
+                  - term [ref=e110]: Stack
+                  - definition [ref=e111]: Next.js · Tailwind
+                - generic [ref=e112]:
+                  - term [ref=e113]: Outcome
+                  - definition [ref=e114]: "[TBD: Damasco outcome EN — 1 sentence with metric if known]"
+              - link "Visit live" [ref=e116] [cursor=pointer]:
+                - /url: https://www.damascocafe.com
+                - text: Visit live
+                - img [ref=e117]
+            - img "Café Damasco — Hospitality interface" [ref=e121]
+        - article [ref=e122]:
+          - generic [ref=e123]:
+            - generic [ref=e124]:
+              - generic [ref=e125]:
+                - generic [ref=e126]: 03 / Featured
+                - generic [ref=e127]: "2023"
+              - generic [ref=e128]:
+                - heading "Hospital Information System" [level=3] [ref=e129]
+                - paragraph [ref=e130]: "[TBD: HIS problem EN — 1 sentence]"
+                - paragraph [ref=e131]: "[TBD: HIS solution EN — 1 sentence]"
+              - generic [ref=e132]:
+                - generic [ref=e133]:
+                  - term [ref=e134]: Role
+                  - definition [ref=e135]: Module developer
+                - generic [ref=e136]:
+                  - term [ref=e137]: Sector
+                  - definition [ref=e138]: Healthcare
+                - generic [ref=e139]:
+                  - term [ref=e140]: Stack
+                  - definition [ref=e141]: React · TypeScript · REST
+                - generic [ref=e142]:
+                  - term [ref=e143]: Outcome
+                  - definition [ref=e144]: "[TBD: HIS outcome EN — 1 sentence with metric if known]"
+            - img "Hospital Information System — Healthcare interface" [ref=e147]
+    - region "More Work" [ref=e148]:
+      - generic [ref=e150]: 04/More Work
+      - generic [ref=e151]:
+        - article [ref=e152]:
+          - link "Project R (CodeInTheWeb) — open live site" [ref=e153] [cursor=pointer]:
+            - /url: https://ssr-project-r.vercel.app/home
+            - generic [ref=e154]:
+              - img "Project R (CodeInTheWeb) — Restaurant SaaS interface" [ref=e156]
+              - generic [ref=e157]:
+                - generic [ref=e158]:
+                  - generic [ref=e159]: Restaurant SaaS
+                  - generic [ref=e160]: "2024"
+                - heading "Project R (CodeInTheWeb)" [level=3] [ref=e161]:
+                  - text: Project R (CodeInTheWeb)
+                  - img [ref=e162]
+                - paragraph [ref=e164]: "[TBD: Project R outcome EN — 1 short sentence]"
+                - paragraph [ref=e165]: Next.js · NestJS
+        - article [ref=e166]:
+          - link "Madbox — open live site" [ref=e167] [cursor=pointer]:
+            - /url: https://madbox-lac.vercel.app/dashboard
+            - generic [ref=e168]:
+              - img "Madbox — Internal tools interface" [ref=e170]
+              - generic [ref=e171]:
+                - generic [ref=e172]:
+                  - generic [ref=e173]: Internal tools
+                  - generic [ref=e174]: "2024"
+                - heading "Madbox" [level=3] [ref=e175]:
+                  - text: Madbox
+                  - img [ref=e176]
+                - paragraph [ref=e178]: +95% billing accuracy, −50% admin workload, zero unauthorized access incidents.
+                - paragraph [ref=e179]: Next.js · Supabase
+        - article [ref=e180]:
+          - link "Contractor Supplai — open live site" [ref=e181] [cursor=pointer]:
+            - /url: https://contractor-supplai.vercel.app/overview
+            - generic [ref=e182]:
+              - img "Contractor Supplai — Operations interface" [ref=e184]
+              - generic [ref=e185]:
+                - generic [ref=e186]:
+                  - generic [ref=e187]: Operations
+                  - generic [ref=e188]: "2024"
+                - heading "Contractor Supplai" [level=3] [ref=e189]:
+                  - text: Contractor Supplai
+                  - img [ref=e190]
+                - paragraph [ref=e192]: "[TBD: Contractor outcome EN — 1 short sentence]"
+                - paragraph [ref=e193]: Next.js · Supabase
+        - article [ref=e194]:
+          - generic [ref=e195]:
+            - img "Librarian Collector — Education interface" [ref=e197]
+            - generic [ref=e198]:
+              - generic [ref=e199]:
+                - generic [ref=e200]: Education
+                - generic [ref=e201]: "2023"
+              - heading "Librarian Collector" [level=3] [ref=e202]
+              - paragraph [ref=e203]: "[TBD: Librarian outcome EN — 1 short sentence]"
+              - paragraph [ref=e204]: Next.js · Supabase
+    - region "Archive" [ref=e205]:
+      - generic [ref=e207]: 05/Archive
+      - link "Bill Generator — open live site" [ref=e209] [cursor=pointer]:
+        - /url: https://billgenerator-xefram7s-projects.vercel.app/
+        - generic [ref=e210]:
+          - generic [ref=e211]: "2023"
+          - generic [ref=e212]: Bill Generator
+          - generic [ref=e213]: Next.js · Zustand
+          - generic [ref=e214]: View
+    - region "Experience" [ref=e216]:
+      - generic [ref=e218]: 06/Experience
+      - list [ref=e219]:
+        - listitem [ref=e220]:
+          - paragraph [ref=e222]: Jun 2022 — Present
+          - heading "Full-Stack Developer · CodeInTheWeb" [level=3] [ref=e223]:
+            - text: Full-Stack Developer
+            - generic [ref=e224]: · CodeInTheWeb
+          - list [ref=e225]:
+            - listitem [ref=e226]: — Restaurant management app and high-conversion landing (+35% conversion).
+            - listitem [ref=e227]: — Bills app for residential condos and React Native mobile app live on Google Play.
+            - listitem [ref=e228]: — Madbox system and dashboards built with Next.js + Supabase.
+        - listitem [ref=e229]:
+          - paragraph [ref=e231]: Oct 2025 — Apr 2026
+          - heading "Full-Stack Software AI Developer · Cream Digital Marketing" [level=3] [ref=e232]:
+            - text: Full-Stack Software AI Developer
+            - generic [ref=e233]: · Cream Digital Marketing
+          - list [ref=e234]:
+            - listitem [ref=e235]: — GPT-5 blueprint analysis with 80% accuracy on construction cost estimation.
+            - listitem [ref=e236]: — Secure multi-tenant architecture with Row-Level Security on Supabase.
+            - listitem [ref=e237]: — Voice AI integration (Retell) for field use.
+        - listitem [ref=e238]:
+          - paragraph [ref=e240]: Jan 2025 — Jun 2025
+          - heading "Backend Developer · Valdusoft" [level=3] [ref=e241]:
+            - text: Backend Developer
+            - generic [ref=e242]: · Valdusoft
+          - list [ref=e243]:
+            - listitem [ref=e244]: — Scalable RESTful APIs in Laravel 11 (−30% production bugs).
+            - listitem [ref=e245]: — MySQL query optimization (−35% load time).
+            - listitem [ref=e246]: — API documentation with Laravel Scribe and Postman.
+        - listitem [ref=e247]:
+          - paragraph [ref=e249]: May 2024 — Jul 2024
+          - heading "Frontend Developer · Sempiterno Group" [level=3] [ref=e250]:
+            - text: Frontend Developer
+            - generic [ref=e251]: · Sempiterno Group
+          - list [ref=e252]:
+            - listitem [ref=e253]: "— [TBD: Sempiterno win EN — short verb-led sentence]"
+    - region "Contact" [ref=e254]:
+      - generic [ref=e256]: 07/Contact
+      - generic [ref=e257]:
+        - paragraph [ref=e258]: Let's talk
+        - heading "Let's build something real." [level=2] [ref=e259]
+        - paragraph [ref=e260]: I respond within a business day.
+        - generic [ref=e261]:
+          - link "Email me" [ref=e262] [cursor=pointer]:
+            - /url: mailto:efraincabrera35@gmail.com
+            - text: Email me
+            - img [ref=e263]
+          - link "Schedule a call" [ref=e265] [cursor=pointer]:
+            - /url: https://calendly.com/efraincabrera35/30min
+            - text: Schedule a call
+            - img [ref=e266]
+          - link "Message on LinkedIn" [ref=e268] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/efrain-cabrera-b25489216/
+            - text: Message on LinkedIn
+            - img [ref=e269]
+          - link "GitHub" [ref=e271] [cursor=pointer]:
+            - /url: https://github.com/xEfraM7
+            - text: GitHub
+            - img [ref=e272]
+  - contentinfo [ref=e274]:
+    - generic [ref=e275]:
+      - generic [ref=e276]:
+        - img [ref=e277]
+        - generic [ref=e280]: © 2026 · All rights reserved.
+      - generic [ref=e281]:
+        - link "LinkedIn" [ref=e282] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/efrain-cabrera-b25489216/
+          - img [ref=e283]
+        - link "GitHub" [ref=e285] [cursor=pointer]:
+          - /url: https://github.com/xEfraM7
+          - img [ref=e286]
+        - link "Twitter" [ref=e288] [cursor=pointer]:
+          - /url: https://twitter.com/xEfraCD
+          - img [ref=e289]
+        - link "Instagram" [ref=e291] [cursor=pointer]:
+          - /url: https://www.instagram.com/efrain_lol/
+          - img [ref=e292]
+    - paragraph [ref=e294]: Designed and built by Efrain Cabrera.

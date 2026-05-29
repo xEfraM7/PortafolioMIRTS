@@ -1,0 +1,110 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - link "Skip to content" [ref=e4] [cursor=pointer]:
+        - /url: "#main-content"
+      - banner [ref=e5]:
+        - generic [ref=e10]:
+          - link "MediClarity logo" [ref=e13] [cursor=pointer]:
+            - /url: https://mediclarity.ai
+            - img "MediClarity logo" [ref=e14]
+          - generic [ref=e15]:
+            - navigation "Main menu" [ref=e18]:
+              - list [ref=e19]:
+                - listitem [ref=e20] [cursor=pointer]:
+                  - link "For Individuals & Caregivers" [ref=e21]:
+                    - /url: https://mediclarity.ai/medical-records-summary?hsLang=en
+                - listitem [ref=e22] [cursor=pointer]:
+                  - link "For Physicians & APPs" [ref=e23]:
+                    - /url: https://mediclarity.ai/ai-remote-patient-monitoring?hsLang=en
+                - listitem [ref=e24] [cursor=pointer]:
+                  - link "Blog" [ref=e25]:
+                    - /url: https://mediclarity.ai/blog?hsLang=en
+            - generic [ref=e26]:
+              - list [ref=e27]:
+                - listitem [ref=e28]:
+                  - link "Sign Up" [ref=e29] [cursor=pointer]:
+                    - /url: https://dashboard.mediclarity.ai/signup
+                    - generic [ref=e30]: Sign Up
+              - button "Book a Demo" [ref=e31] [cursor=pointer]
+    - main [ref=e36]:
+      - generic [ref=e40]:
+        - generic [ref=e43]:
+          - generic [ref=e51]:
+            - heading "AI MEDICAL RECORDS SUMMARY" [level=1] [ref=e52]
+            - heading "A clear view of health across time and care." [level=2] [ref=e53]:
+              - generic [ref=e54]:
+                - text: A clear view of health
+                - emphasis [ref=e55]: across time and care.
+            - paragraph [ref=e56]: MediClarity transforms fragmented records and real-time health data into a structured, actionable AI medical records summary—bringing clarity and continuity to patients, caregivers, and providers alike.
+          - paragraph [ref=e76]: CHOOSE YOUR PATH
+          - generic [ref=e85]:
+            - generic [ref=e86] [cursor=pointer]:
+              - img [ref=e88]
+              - paragraph
+              - paragraph [ref=e91]:
+                - strong [ref=e92]: Individuals & Caregivers
+                - generic [ref=e93]:
+                  - text: Access your complete medical history in one organized view.
+                  - strong [ref=e95]:
+                    - link "Explore Your Health Story →" [ref=e97]:
+                      - /url: /medical-records-summary?hsLang=en
+              - paragraph
+            - generic [ref=e98] [cursor=pointer]:
+              - img [ref=e100]
+              - paragraph
+              - paragraph [ref=e103]:
+                - strong [ref=e104]: Physicians & APPs
+                - generic [ref=e105]:
+                  - text: Review structured patient histories and ongoing updates efficiently.
+                  - strong [ref=e106]:
+                    - link "Explore Patient Insights →" [ref=e108]:
+                      - /url: /ai-remote-patient-monitoring?hsLang=en
+              - paragraph
+        - heading "Supporting better understanding, smarter monitoring, and more informed care." [level=2] [ref=e124]:
+          - generic [ref=e125]:
+            - text: Supporting better understanding, smarter monitoring, and
+            - emphasis [ref=e127]: more informed care.
+        - list [ref=e135]:
+          - listitem [ref=e136]:
+            - img "HIPAA Logo" [ref=e137]
+        - heading "Where clinical expertise meets secure, practical design." [level=2] [ref=e146]:
+          - generic [ref=e147]:
+            - text: Where
+            - emphasis [ref=e148]: clinical expertise
+            - text: meets secure, practical design.
+        - generic [ref=e156]:
+          - generic [ref=e157]:
+            - img [ref=e159]
+            - paragraph [ref=e162]:
+              - strong [ref=e163]: Clinically guided
+              - text: Founded by a board-certified neurologist and developed with healthcare insight
+          - generic [ref=e164]:
+            - img [ref=e166]
+            - paragraph [ref=e169]:
+              - strong [ref=e170]: HIPAA-compliant
+              - text: Secure handling of protected health information with rigorous privacy safeguards
+          - generic [ref=e171]:
+            - img [ref=e173]
+            - paragraph [ref=e176]:
+              - strong [ref=e177]: Designed for efficiency
+              - text: Built to simplify how health information is organized, reviewed, and acted on
+        - generic [ref=e179]:
+          - heading "See the full picture. Act with confidence." [level=2] [ref=e186]:
+            - text: See the full picture.
+            - emphasis [ref=e187]: Act with confidence.
+          - generic [ref=e188]:
+            - generic [ref=e193]:
+              - paragraph [ref=e194]:
+                - strong [ref=e195]: Patients & Caregivers
+              - paragraph [ref=e196]: Let your health story shape your care strategy.
+            - link "Sign Up Now" [ref=e202] [cursor=pointer]:
+              - /url: https://dashboard.mediclarity.ai/signup
+          - generic [ref=e203]:
+            - generic [ref=e208]:
+              - paragraph [ref=e209]:
+                - strong [ref=e210]: Physicians & APPs
+              - paragraph [ref=e211]: Let better understanding drive better patient care.
+            - button "Book a Demo" [ref=e217] [cursor=pointer]
+  - contentinfo [ref=e218]:
+    - generic [ref=e235]: © Copyright MediClarity.ai 2026. All rights reserved.
