@@ -73,6 +73,12 @@
       "solution": "Construí una PWA offline-first con Supabase Auth + RLS, análisis de documentos con LlamaIndex, colaboración en tiempo real, integración con wearables y un asistente de salud por chat con IA.",
       "outcome": "Dos experiencias por rol (pacientes + proveedores) en producción con arquitectura HIPAA-ready, seguimiento de medicación e insights con IA."
     },
+    "stockflow": {
+      "role": "Desarrollador full-stack",
+      "problem": "Un negocio real llevaba inventario, cotizaciones y facturación a mano entre hojas de cálculo — errores de stock, cotizaciones lentas y sin una fuente única para la operación comercial.",
+      "solution": "Construí y desplegué un SaaS de inventario multi-tenant en Next.js 16 + React 19 + Supabase (PostgreSQL + RLS), con kardex valorado, cotizaciones, facturación automática, analítica en tiempo real y soporte multi-moneda.",
+      "outcome": "En producción y adoptado por un negocio real: −90% de errores de stock con control de movimientos en tiempo real, −70% en tiempo de generación de cotizaciones con flujos automatizados y seguimiento manual en hojas de cálculo eliminado — toda la operación comercial centralizada en una plataforma."
+    },
     "damasco": {
       "role": "Desarrollo completo",
       "problem": "Café Damasco necesitaba un sitio público que reflejara su marca de café de especialidad y atrajera visitas al local.",

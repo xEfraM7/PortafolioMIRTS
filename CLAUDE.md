@@ -76,7 +76,7 @@ PortafolioMIRTS/
     │   ├── en.json
     │   └── es.json
     ├── data/
-    │   └── projects.ts          # 9 proyectos tipados con tier 1 (3) / tier 2 (6)
+    │   └── projects.ts          # 10 proyectos tipados con tier 1 (3) / tier 2 (7)
     └── lib/
         ├── cn.ts                # clsx + tailwind-merge
         └── motion.ts            # Framer Motion variants compartidos

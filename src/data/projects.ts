@@ -1,6 +1,7 @@
 import perfectBook from "../assets/img/projects/perfect-book.webp";
 import madbox from "../assets/img/projects/madbox.webp";
 import mediclarity from "../assets/img/projects/mediclarity.webp";
+import stockflow from "../assets/img/projects/stockflow.webp";
 import damasco from "../assets/img/projects/damasco.webp";
 import biocurePrime from "../assets/img/projects/biocure-prime.webp";
 import primefx from "../assets/img/projects/primefx.webp";
@@ -68,6 +69,20 @@ export const projects: Project[] = [
     imgUrl: mediclarity,
     liveUrl: "https://dashboard.mediclarity.ai",
     tier: 1,
+  },
+  {
+    id: "stockflow",
+    client: "StockFlow",
+    year: "2025",
+    sector: "Inventory SaaS",
+    roleKey: "projects.stockflow.role",
+    problemKey: "projects.stockflow.problem",
+    solutionKey: "projects.stockflow.solution",
+    outcomeKey: "projects.stockflow.outcome",
+    stack: ["Next.js 16", "React 19", "Supabase", "RLS"],
+    imgUrl: stockflow,
+    liveUrl: "https://stock-flow-silk.vercel.app",
+    tier: 2,
   },
   {
     id: "damasco",
